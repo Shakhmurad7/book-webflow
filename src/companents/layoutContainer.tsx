@@ -1,9 +1,9 @@
 
 import Header from '../layout/header'
 import Footer from '../layout/footer'
-import Navbar from '../Pgae.tsx/navbar'
+import Navbar from '../pages/navbar'
 
-function LayoutContainer(a) {
+function LayoutContainer(a:any) {
   return (
     <>
         <Header/>

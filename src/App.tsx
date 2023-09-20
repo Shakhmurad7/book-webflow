@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router"
-import Home from "./Pgae.tsx/home"
-import About from "./Pgae.tsx/about"
+import Home from "./pages/home"
+import About from "./pages/about"
+import "./Style.css"
 
 function App() {
   return (

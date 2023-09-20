@@ -1,9 +1,14 @@
-
+import { Typography } from "@mui/material"
+import { Box, Container } from "@mui/system"
 
 function Footer() {
   return (
    <>
-    <h1>footer</h1>
+   <Box>
+      <Container>
+        <Typography variant="h3" component={"h3"}>Salam</Typography>
+      </Container>
+   </Box>
    </>
   )
 }
