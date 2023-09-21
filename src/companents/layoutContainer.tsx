@@ -2,11 +2,15 @@
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 
-function LayoutContainer(a:any) {
+interface Props {
+  children: React.ReactNode;
+}
+
+function LayoutContainer({children}:Props) {
   return (
     <>
         <Header/>
-         <main>{a.children}</main>
+         <main>{children}</main>
         <Footer/>
     </>
   )
