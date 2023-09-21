@@ -7,7 +7,6 @@ function LayoutContainer(a:any) {
   return (
     <>
         <Header/>
-        <Navbar/>
          <main>{a.children}</main>
         <Footer/>
     </>
