@@ -1,4 +1,4 @@
-import React from 'react'
+
 import LayoutContainer from '../companents/layoutContainer'
 
 function Home() {
