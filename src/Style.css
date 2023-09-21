@@ -10,3 +10,15 @@ ul li{
     color: white;
     list-style: none;
 }
+.footer-h2{
+    position: relative;
+}
+.footer-h2::after{
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    background-color: #FFCA42;
+    bottom: -10px;
+    left: 0;
+    content: "";
+}
