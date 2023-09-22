@@ -88,6 +88,7 @@ function Home() {
           </Container>
           </Box>
 
+
           {/* -----Box----- */}
               <Container sx={{py:10}} >
 
@@ -156,9 +157,11 @@ function Home() {
                               </Stack>
 
                                 </Stack>
-
+                                
                                 <Link to={'/'}>
-                              <Typography sx={{ border:'1px solid #FFCA42' , mt:3, width:'fit-content', px:4, py:1 , height:'fit-content'}}>Order Today</Typography>
+                              <Typography sx={{ border:'1px solid #FFCA42' , transition:".4s", "&:hover" :{
+                                    backgroundColor:'#FFCA42' , color:'white'
+                              } ,  mt:3, width:'fit-content', px:4, py:1 , height:'fit-content'}}>Order Today</Typography>
                               </Link> 
 
                             </Grid>
@@ -213,7 +216,9 @@ function Home() {
                               </Stack>
 
                              <Link to={'/'}>
-                              <Typography sx={{ border:'1px solid #FFCA42' , mt:3, width:'fit-content', px:4, py:1 , height:'fit-content'}}>Order Today</Typography>
+                              <Typography sx={{ border:'1px solid #FFCA42' , transition:".4s", "&:hover" :{
+                                    backgroundColor:'#FFCA42' , color:'white'
+                              } ,  mt:3, width:'fit-content', px:4, py:1 , height:'fit-content'}}>Order Today</Typography>
                               </Link> 
 
                                 </Stack>
@@ -222,6 +227,45 @@ function Home() {
                     </Grid>
               </Grid>
               </Container>
+
+  {/* ----Content------ */}
+  <Container sx={{pb:10}}>
+          <Grid container >
+            <Grid item xs={4} md={6} width={"400px"}>
+                  <div className="content-home"> 
+                    <img className="img-content" src={'./Imge/Photo.jpg'} />
+                  </div>
+            </Grid>
+            <Grid item xs={8} md={6} >
+                  <Typography  sx={{fontSize:'40px' , color:'#1B3764'}}>About Author</Typography>
+                  <Typography py={3} sx={{opacity:'0.7'}}>All the Lorem Ipsum generators on the Internet tend to repeated predefined chunks as necessary, making this the first true value generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</Typography>
+                  <Stack pb={3} color={"#1B3764"} flexDirection={"row"} gap={6}>
+                        <Stack gap={1}>
+                          <Typography  sx={{fontSize:'45px'}}>02</Typography>
+                          <Typography sx={{opacity:'0.7'}}>Books Published</Typography>
+                        </Stack >
+                        <Stack gap={1}>
+                          <Typography  sx={{fontSize:'45px'}}>02</Typography>
+                          <Typography sx={{opacity:'0.7'}}>Books Published</Typography>
+                        </Stack>
+                        <Stack gap={1}>
+                          <Typography  sx={{fontSize:'45px'}}>02</Typography>
+                          <Typography sx={{opacity:'0.7'}}>Books Published</Typography>
+                        </Stack>
+                  </Stack>
+
+                  <Stack p={2} alignItems={"center"} sx={{backgroundColor:'#1B3764'}} gap={2}  flexDirection={"row"} width={'fit-content'}>
+                    <img width={"100px"} height={'100px'} src={'./Imge/Image.png'} />
+                    <Stack gap={1} >
+                        <Typography color={'#FFCA42'} >John Abraham , Ph.d</Typography>
+                        <Typography sx={{opacity:'0.7' , color:'white'}}>Mail : johnabraham@gmail.com</Typography>
+                        <Typography sx={{opacity:'0.7' , color:'white'}}>Phone : (+2) 123 545 9000</Typography>
+                    </Stack>
+                  </Stack>
+            </Grid>
+
+          </Grid>
+  </Container>
                
 
 
