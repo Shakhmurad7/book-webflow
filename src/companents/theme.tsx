@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from '@mui/material/styles'
 
 
 
@@ -10,6 +10,12 @@ import { createTheme } from "@mui/material";
             md: 900,
             lg: 1350,
             xl: 1536,
+          },
+        },
+
+        typography: {
+          allVariants: {
+            fontFamily: 'Cardo',
           },
         },
       });
