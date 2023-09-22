@@ -230,13 +230,13 @@ function Home() {
 
   {/* ----Content------ */}
   <Container sx={{pb:10}}>
-          <Grid container >
-            <Grid item xs={4} md={6} width={"400px"}>
+          <Grid container  alignItems={'center'} >
+            <Grid item xs={12} md={5}>
                   <div className="content-home"> 
                     <img className="img-content" src={'./Imge/Photo.jpg'} />
                   </div>
             </Grid>
-            <Grid item xs={8} md={6} >
+            <Grid item xs={12} md={6} >
                   <Typography  sx={{fontSize:'40px' , color:'#1B3764'}}>About Author</Typography>
                   <Typography py={3} sx={{opacity:'0.7'}}>All the Lorem Ipsum generators on the Internet tend to repeated predefined chunks as necessary, making this the first true value generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</Typography>
                   <Stack pb={3} color={"#1B3764"} flexDirection={"row"} gap={6}>
