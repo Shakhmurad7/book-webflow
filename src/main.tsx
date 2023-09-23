@@ -7,7 +7,7 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 import createTheme from "./companents/theme.tsx";
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import rootredux from './db/redux..tsx';
+import rootredux from './db/redux.tsx';
 
 const store = createStore(rootredux)
 

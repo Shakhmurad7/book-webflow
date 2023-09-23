@@ -1,7 +1,7 @@
 import { Box, Container, Stack } from "@mui/system";
 import { Typography, Grid } from "@mui/material";
 import LayoutContainer from '../companents/layoutContainer'
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import HomeDB from "../db/homeDB";
 
 function Home() {
@@ -169,7 +169,7 @@ function Home() {
                             </Grid>
 
                     </Grid>
-                    <Grid item xs={12} md={6} spacing={2} >
+                    <Grid item xs={12} md={6}  >
 
                                 <Grid container spacing={12} alignItems={"center"}>
 
@@ -282,7 +282,7 @@ function Home() {
                   backgroundColor: '#FFCA42',
                 }}>
                 </span></Typography>
-               <HomeDB/>               
+               <HomeDB key="HomeDB" />               
           </Stack>
         </Container>
     </LayoutContainer>

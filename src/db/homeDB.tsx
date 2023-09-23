@@ -4,8 +4,9 @@ import { Stack } from "@mui/system";
 import { Typography } from "@mui/material";
 import axios from 'axios';
 import { connect, ConnectedProps } from "react-redux";
-import { RootState } from "./redux.tsx"; // Replace with the actual path to your Redux types
-
+interface RootState {
+    user: string[]; // Assuming 'user' is an array of strings, adjust the type as needed
+  }
 const url = 'https://book-db-shakhmurad.vercel.app/posts1';
 
 type HomeDBProps = PropsFromRedux;
