@@ -1,7 +1,7 @@
 
 import { useEffect } from "react";
-import { Box, Container, Stack } from "@mui/system";
-import { Typography, Grid } from "@mui/material";
+import { Stack } from "@mui/system";
+import { Typography } from "@mui/material";
 import axios from 'axios';
 import { connect, ConnectedProps } from "react-redux";
 import { RootState } from "./redux.tsx"; // Replace with the actual path to your Redux types
