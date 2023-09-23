@@ -1,7 +1,7 @@
 import { Box, Container, Stack } from "@mui/system";
 import { Typography, Grid } from "@mui/material";
 import LayoutContainer from '../companents/layoutContainer'
-import { Link, useParams } from "react-router-dom";
+import { Link} from "react-router-dom";
 import HomeDB from "../db/homeDB";
 
 function Home() {
