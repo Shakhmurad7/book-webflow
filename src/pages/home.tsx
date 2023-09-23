@@ -2,6 +2,7 @@ import { Box, Container, Stack } from "@mui/system";
 import { Typography, Grid } from "@mui/material";
 import LayoutContainer from '../companents/layoutContainer'
 import { Link } from "react-router-dom";
+import HomeDB from "../db/homeDB";
 
 function Home() {
   return (
@@ -231,7 +232,7 @@ function Home() {
   {/* ----Content------ */}
   <Container sx={{pb:10}}>
           <Grid container  alignItems={'center'} >
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={6}>
                   <div className="content-home"> 
                     <img className="img-content" src={'./Imge/Photo.jpg'} />
                   </div>
@@ -266,9 +267,24 @@ function Home() {
 
           </Grid>
   </Container>
-               
 
 
+    <Container sx={{py:10}}>
+          <Stack alignItems={"center"}>
+                <Typography sx={{position:"relative" , width:'fit-content'}}  variant="h3" component={'h3'}>Trusted by the Best
+                <span style={{
+                  position: 'absolute',
+                  left:"40%",
+                  content: '',
+                  bottom:'-15px',
+                  width: '20%',
+                  height: '3px',
+                  backgroundColor: '#FFCA42',
+                }}>
+                </span></Typography>
+               <HomeDB/>               
+          </Stack>
+        </Container>
     </LayoutContainer>
   )
 }

@@ -29,7 +29,7 @@ ul li{
     position: relative;
     z-index: 10;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height:auto;
 }
 .content-home{
@@ -46,4 +46,10 @@ ul li{
     top: 20px;
     right: -30px;
     position: absolute;
+}
+.img-data-home{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    max-width: 150px;
 }
