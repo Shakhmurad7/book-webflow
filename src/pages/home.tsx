@@ -3,6 +3,8 @@ import { Typography, Grid } from "@mui/material";
 import LayoutContainer from '../companents/layoutContainer'
 import { Link} from "react-router-dom";
 import HomeDB from "../db/homeDB";
+import Boxs from "../layout/box";
+import { ClassNames } from "@emotion/react";
 
 function Home() {
   return (
@@ -285,6 +287,69 @@ function Home() {
                <HomeDB key="HomeDB" />               
           </Stack>
         </Container>
+        <Box sx={{py:10}} >
+           <Boxs/>
+        </Box>
+
+
+<Container>
+        <Stack alignItems={"center"}>
+          <Typography  position={'relative'} width={'fit-content'}  color={'#1B3764'} variant="h4" component={'h4'} >What will you learn?
+          <span style={{
+                  position: 'absolute',
+                  left:"40%",
+                  content: '',
+                  bottom:'-15px',
+                  width: '20%',
+                  height: '3px',
+                  backgroundColor: '#FFCA42',
+                }}>
+           </span>
+          </Typography>
+                <Grid container py={10} >
+                    <Grid item xs={12} md={6} >
+                      <Stack flexDirection={'row'} gap={3}>
+                          <Stack>
+                              <Stack gap={1.5} sx={{backgroundColor:'#F4F8FF' , p:2.5 , width:'250px'}} >
+                                <Typography  sx={{ py:1 , px:1.5 ,  backgroundColor:'#FFCA42' , borderRadius:"50%" , width:"fit-content"}} 
+                                >01</Typography>
+                                <Typography>Use HDFS & Map Reduce for storing & analyzing data at scale.</Typography>
+                              </Stack>
+                          </Stack>
+                          <Stack>
+                              <Stack gap={1.5} sx={{backgroundColor:'#F4F8FF' , p:2.5 , width:'250px'}} >
+                                <Typography  sx={{ py:1 , px:1.5 ,  backgroundColor:'#FFCA42' , borderRadius:"50%" , width:"fit-content"}} 
+                                >02</Typography>
+                                <Typography>Use HDFS & Map Reduce for storing & analyzing data at scale.</Typography>
+                              </Stack>
+                          </Stack>
+                      </Stack>
+                      <Stack flexDirection={'row'} gap={3} pt={3}>
+                          <Stack>
+                              <Stack gap={1.5} sx={{backgroundColor:'#F4F8FF' , p:2.5 , width:'250px'}} >
+                                <Typography  sx={{ py:1 , px:1.5 ,  backgroundColor:'#FFCA42' , borderRadius:"50%" , width:"fit-content"}} 
+                                >03</Typography>
+                                <Typography>Use HDFS & Map Reduce for storing & analyzing data at scale.</Typography>
+                              </Stack>
+                          </Stack>
+                          <Stack>
+                              <Stack gap={1.5} sx={{backgroundColor:'#F4F8FF' , p:2.5 , width:'250px'}} >
+                                <Typography  sx={{ py:1 , px:1.5 ,  backgroundColor:'#FFCA42' , borderRadius:"50%" , width:"fit-content"}} 
+                                >04</Typography>
+                                <Typography>Use HDFS & Map Reduce for storing & analyzing data at scale.</Typography>
+                              </Stack>
+                          </Stack>
+                      </Stack>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                    <div className="section-home"> 
+                          <img className="img-section" src={'./Imge/Photo (1).jpg'} />
+                      </div>
+                    </Grid>
+                </Grid>
+                
+        </Stack>
+</Container>
     </LayoutContainer>
   )
 }

@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material"
 import { Box, Container } from "@mui/system"
-function box() {
+function Boxs() {
   return (
     <>
      <Box sx={{backgroundColor:'#1B3764'}}>
@@ -21,4 +21,4 @@ function box() {
   )
 }
 
-export default box
+export default Boxs

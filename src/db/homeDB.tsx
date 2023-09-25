@@ -1,9 +1,10 @@
 
     import { useEffect } from "react";
     import { Stack } from "@mui/system";
-    import { Typography } from "@mui/material";
+    import {  Typography } from "@mui/material";
     import axios from 'axios';
     import { connect, ConnectedProps } from "react-redux";
+
     interface RootState {
         user: string[]; // Assuming 'user' is an array of strings, adjust the type as needed
     }
@@ -57,9 +58,13 @@
                 }
             </Stack>
     </Stack>
+
             </>
         );
     }
+
+
+
 
     const mapState = (state: RootState) => ({
         user: state.user // Replace 'user' with the actual key in your Redux state
