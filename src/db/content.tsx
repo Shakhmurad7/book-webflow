@@ -2,25 +2,19 @@
 import axios from "axios"
 import {  Typography } from "@mui/material";
 import { Stack } from "@mui/system";
-import { useEffect } from "react"
-import { connect , ConnectedProps } from "react-redux"
+import { useEffect, useState } from "react"
 
 
-interface RootState{
-    user:string
-}
-type HomeDBProps = PropsFromRedux;
-const url = 'https://book-db-shakhmurad.vercel.app/posts2'
-function Content({user , dispatch}:HomeDBProps) {
+
+const url = 'https://book-db-shakhmurad.vercel.app/posts-content-2'
+function Content() {
+    const [data , setdata] = useState([])
 
     useEffect(()=>{
         axios.get(url).then(({data})=>{
-            dispatch({
-                type:'data' , 
-                payload:data
-            })
+            setdata(data)
         })
-    } , [dispatch])
+    } , [])
 
   return (
 
@@ -29,7 +23,7 @@ function Content({user , dispatch}:HomeDBProps) {
 
     <Stack flexDirection={'row'} gap={4} py={3}>
         {
-            user.slice(0,2).map(({text , id , item , pags , Length}:any)=>{
+            data.slice(0,2).map(({text , id , item , pags , Length}:any)=>{
                 return(
                     <Stack gap={2} sx={{backgroundColor:'white' , p:4}} key={id} width={{md:'500px' , xs:'200px' }}> 
                         <Typography color={'#1B3764'} fontSize={'20px'} >{item}</Typography>
@@ -69,7 +63,7 @@ function Content({user , dispatch}:HomeDBProps) {
 
     <Stack flexDirection={'row'} gap={4} py={3}>
         {
-            user.slice(2,4).map(({text , id , item , pags , Length}:any)=>{
+            data.slice(2,4).map(({text , id , item , pags , Length}:any)=>{
                 return(
                     <Stack gap={2} sx={{backgroundColor:'white' , p:4}} key={id} width={{md:'500px' , xs:'200px' }}> 
                         <Typography color={'#1B3764'} fontSize={'20px'} >{item}</Typography>
@@ -111,10 +105,5 @@ function Content({user , dispatch}:HomeDBProps) {
   )
 }
 
-const mapState = (state: RootState) => ({
-    user: state.user // Replace 'user' with the actual key in your Redux state
-});
 
-type PropsFromRedux = ConnectedProps<typeof mapState>;  
-
-export default connect(mapState)(Content)
+export default (Content)
