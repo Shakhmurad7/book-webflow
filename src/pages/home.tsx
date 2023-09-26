@@ -4,7 +4,7 @@ import LayoutContainer from '../companents/layoutContainer'
 import { Link} from "react-router-dom";
 import HomeDB from "../db/homeDB";
 import Boxs from "../layout/box";
-import { ClassNames } from "@emotion/react";
+import Content from "../db/content";
 
 function Home() {
   return (
@@ -350,6 +350,16 @@ function Home() {
                 
         </Stack>
 </Container>
+
+
+<Box sx={{backgroundColor:'#F4F8FF' , py:5}} >
+        <Container>
+          <Stack justifyContent={'center'} alignItems={'center'} >
+                <Typography variant="h4" component={"h4"} >The Chapter Includes</Typography>
+                <Content/>
+          </Stack>
+        </Container>
+</Box>
     </LayoutContainer>
   )
 }
