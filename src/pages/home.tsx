@@ -7,6 +7,7 @@ import Boxs from "../layout/box";
 import Content from "../db/content";
 import CardRight from "../db/card-content-right";
 import CardHome from "../db/CardHome";
+import ContentInput from "../layout/content-input";
 
 function Home() {
   return (
@@ -445,6 +446,8 @@ function Home() {
                   <CardHome/>
             </Container>
 </Box>
+
+                <ContentInput/>
     </LayoutContainer>
   )
 }

@@ -1,7 +1,7 @@
 
 import {  Typography } from "@mui/material";
 import axios from "axios"
-import { Stack } from "@mui/system";
+import { Stack} from "@mui/system";
 import { useEffect, useState } from "react"
 const url = 'https://book-db-shakhmurad.vercel.app/posts-card'
 

@@ -86,3 +86,8 @@ ul li{
 .img-radius{
     border-radius: 50%;
 }
+.input{
+    width: 100%;
+    padding: 10px;
+    
+}
