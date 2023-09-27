@@ -21,7 +21,7 @@ function CardHome() {
             return(
                 <>
                     
-                <Stack sx={{backgroundColor:'width' , cursor:"pointer"}} >
+                <Stack key={id} sx={{backgroundColor:'width' , cursor:"pointer"}} >
                     <img src={`./Imge/${img}.png`} />
                 <Stack p={1} gap={2}>
                         <Typography fontWeight={'700'}  color={`#1B3764`} fontSize={'25px'} >
@@ -40,6 +40,7 @@ function CardHome() {
                         </Stack>
                 </Stack>
                 </Stack>
+
 
                 
                 </>
