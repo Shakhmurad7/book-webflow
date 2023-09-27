@@ -5,6 +5,7 @@ import { Link} from "react-router-dom";
 import HomeDB from "../db/homeDB";
 import Boxs from "../layout/box";
 import Content from "../db/content";
+import CardRight from "../db/card-content-right";
 
 function Home() {
   return (
@@ -379,8 +380,48 @@ function Home() {
                       </Stack>
                 </Stack>
           </Stack>
+
+
         </Container>
 </Box>
+
+
+            <Container>
+              <Stack flexDirection={'row'} justifyContent={'space-between'}>
+
+              <Stack  gap={3}>
+                <Typography width={'250px'} position={"relative"}  component={'h4'} variant="h4" >
+                What Readers Say About the Book
+                <span style={{
+                  position: 'absolute',
+                  left:"0",
+                  content: '',
+                  bottom:'-15px',
+                  width: '20%',
+                  height: '3px',
+                  backgroundColor: '#FFCA42',
+                }}></span>
+                </Typography>
+                <Typography>
+                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.
+                </Typography>
+                <Stack flexDirection={'row'} gap={1}>
+                  <img src={'./Imge/Group 2 (1).svg'}/>
+                  <Typography>
+                  (4.8/5)
+                  </Typography>
+                </Stack>
+                <Typography>
+                Overall Customer Ratings
+                </Typography>
+              </Stack>
+
+                  <Stack>
+                      <CardRight/>
+                </Stack>
+
+              </Stack>
+            </Container>
     </LayoutContainer>
   )
 }
