@@ -355,8 +355,29 @@ function Home() {
 <Box sx={{backgroundColor:'#F4F8FF' , py:5}} >
         <Container>
           <Stack justifyContent={'center'} alignItems={'center'} >
-                <Typography variant="h4" component={"h4"} >The Chapter Includes</Typography>
-                <Content/>
+                <Typography mb={5} position={"relative"}   variant="h4" component={"h4"}> The Chapter Includes
+
+                <span style={{
+                  position: 'absolute',
+                  left:"40%",
+                  content: '',
+                  bottom:'-15px',
+                  width: '20%',
+                  height: '3px',
+                  backgroundColor: '#FFCA42',
+                }}></span>
+
+                </Typography>
+                <Content />
+
+                <Stack py={3} textAlign={"center"} alignItems={"center"}>
+                    <Typography mb={2} sx={{backgroundColor:'#FFCA42' , fontSize:'24px'  }}  py={1} px={8}  >Start a 15-Days Free Trail</Typography>
+                      <Typography sx={{opacity:'0.7'}} >Short description about each chapter</Typography>
+                      <Stack  flexDirection={'row'}  gap={1}>
+                         <Typography> <Link style={{color:'blue' , textDecoration:'underline'}}  to={'/'}>Have any questions? </Link></Typography>
+                         <Typography sx={{opacity:'0.7'}} >Contact us</Typography>
+                      </Stack>
+                </Stack>
           </Stack>
         </Container>
 </Box>
