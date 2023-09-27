@@ -386,11 +386,11 @@ function Home() {
 </Box>
 
 
-            <Container>
-              <Stack flexDirection={'row'} justifyContent={'space-between'}>
+            <Container sx={{py:10}}>
+              <Stack flexDirection={'row'} justifyContent={'space-between'} alignItems={"center"}>
 
-              <Stack  gap={3}>
-                <Typography width={'250px'} position={"relative"}  component={'h4'} variant="h4" >
+              <Stack  width={'500px'} gap={3}>
+                <Typography width={'250px'} color={'#1B3764'} sx={{fontWeight:'700'}} position={"relative"}  component={'h3'} variant="h3" >
                 What Readers Say About the Book
                 <span style={{
                   position: 'absolute',
