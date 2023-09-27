@@ -6,6 +6,7 @@ import HomeDB from "../db/homeDB";
 import Boxs from "../layout/box";
 import Content from "../db/content";
 import CardRight from "../db/card-content-right";
+import CardHome from "../db/CardHome";
 
 function Home() {
   return (
@@ -422,6 +423,28 @@ function Home() {
 
               </Stack>
             </Container>
+
+<Box  sx={{backgroundColor:'#F4F8FF' , py:5}}>
+
+            <Container>
+                <Stack alignItems={"center"}>
+                    <Typography variant="h4" component={'h4'} sx={{fontWeight:'700' ,color:'#1B3764'}} position={"relative"}>
+                        Articles & Resources
+                        <span style={{
+                  position: 'absolute',
+                  left:"40%",
+                  content: '',
+                  bottom:'-15px',
+                  width: '20%',
+                  height: '3px',
+                  backgroundColor: '#FFCA42',
+                }}></span>
+                    </Typography>
+                </Stack>
+
+                  <CardHome/>
+            </Container>
+</Box>
     </LayoutContainer>
   )
 }
