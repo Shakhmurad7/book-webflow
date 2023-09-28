@@ -3,11 +3,11 @@ import { Box, Container, Stack, Typography } from '@mui/material'
 import LayoutContainer from '../companents/layoutContainer'
 import HomeDB from '../db/homeDB'
 import ContentInput from '../layout/content-input'
-import Hero from '../layout/hero'
 import Aside from '../layout/aside'
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Hero from '../layout/hero'
 
 
 function About() {
