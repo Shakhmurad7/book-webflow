@@ -24,6 +24,27 @@
 
         return (
             <>
+            <Stack alignItems={"center"} pt={10}>
+
+             <Typography
+            sx={{ position: "relative", width: "fit-content" }}
+            variant="h3"
+            component={"h3"}
+          >
+            Trusted by the Best
+            <span
+              style={{
+                position: "absolute",
+                left: "40%",
+                content: "",
+                bottom: "-15px",
+                width: "20%",
+                height: "3px",
+                backgroundColor: "#FFCA42",
+            }}
+            ></span>
+          </Typography>
+            </Stack>
             <Stack flexDirection={{ md:'row'}} gap={10} width={'100%'} >
 
             <Stack flexDirection={'row'}  justifyContent={"space-between"} width={'100%'}>               
