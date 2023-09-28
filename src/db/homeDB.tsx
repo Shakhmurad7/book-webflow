@@ -24,7 +24,7 @@
 
         return (
             <>
-            <Stack alignItems={"center"} pt={10}>
+            <Stack alignItems={"center"} pb={5}>
 
              <Typography
             sx={{ position: "relative", width: "fit-content" }}
