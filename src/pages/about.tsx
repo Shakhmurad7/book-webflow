@@ -1,10 +1,11 @@
 
 import LayoutContainer from '../companents/layoutContainer'
+import Hero from '../layout/hero'
 
 function About() {
   return (
     <LayoutContainer>
-        <h1>About</h1>
+          <Hero/>
     </LayoutContainer>
   )
 }
