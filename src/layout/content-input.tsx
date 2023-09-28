@@ -4,7 +4,7 @@ import { Stack  ,  Container} from "@mui/system";
 function ContentInput() {
   return (
     <>
-        <Container sx={{backgroundColor:'#FFCA42' , p:5, my:5}}>
+        <Container sx={{backgroundColor:'#FFCA42' , px:5, py:15 ,  my:5}}>
             <Stack textAlign={"center"} alignItems={"center"}>
                     <Typography color={'#1B3764'} fontWeight={"600"} mb={2} variant="h4" component={'h4'} position={"relative"}>
                     Read a free chapter

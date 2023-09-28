@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Aside() {
   return (
-    <Container sx={{ py: 10 }}>
+    <Container sx={{ py: 0 }}>
     <Stack alignItems={"center"}>
       <Typography
         sx={{ position: "relative" }}
