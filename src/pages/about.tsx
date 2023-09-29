@@ -66,6 +66,64 @@ function About() {
             </Stack>
           </Container>
           </Box>
+
+
+
+                <Container sx={{py:10}}>
+                  <Stack flexDirection={'row'} gap={10}>
+                  <Stack gap={3}>
+
+                    <Stack gap={5}>
+                      <Typography position={'relative'} variant='h4' component={'h4'} color={"#1B3764"} >
+                      My Story
+                      <span
+                      style={{
+                         position: "absolute",
+                         left: "0",
+                         content: "",
+                        bottom: "-15px",
+                        width: "10%",
+                        height: "5px",
+                        backgroundColor: "#FFCA42",
+                         }}
+              ></span>
+                      </Typography>
+                      <Typography sx={{opacity:"0.7"}}>
+                      Making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.
+                      </Typography>
+                    </Stack>
+
+                    <Stack gap={5} pl={3}>
+                    <Stack flexDirection={'row'} gap={2} alignItems={'center'}>
+                        <Typography sx={{p:2 , fontWeight:'700' , fontSize:'25px' ,   backgroundColor:'#FFCA42' , color:'#1B3764' , height:"fit-content"}} >01</Typography>
+                        <Stack>
+                          <Typography pb={0.5} sx={{ fontWeight:'700'}}  color={'#1B3764'}>Great Author Awards - 1996 & 2000</Typography>
+                          <Typography  sx={{opacity:'0.7'}}>How to navigate around the interface and toggle on/off the panels you wish to use.</Typography>
+                        </Stack>
+                    </Stack>
+                    <Stack flexDirection={'row'} gap={2} alignItems={'center'}>
+                        <Typography sx={{p:2 , fontWeight:'700' , fontSize:'25px' ,   backgroundColor:'#FFCA42' , color:'#1B3764' , height:"fit-content"}} >02</Typography>
+                        <Stack>
+                          <Typography pb={0.5}  sx={{ fontWeight:'700'}}color={'#1B3764'}>10 Times New York Times ® Best Seller</Typography>
+                          <Typography sx={{opacity:'0.7'}}>How to navigate around the interface and toggle on/off the panels you wish to use.</Typography>
+                        </Stack>
+                    </Stack>
+                    <Stack flexDirection={'row'} gap={2} alignItems={'center'}>
+                        <Typography sx={{p:2 ,  fontWeight:'700' , fontSize:'25px' ,  backgroundColor:'#FFCA42' , color:'#1B3764' , height:"fit-content"}} >03</Typography>
+                        <Stack>
+                          <Typography pb={0.5} sx={{ fontWeight:'700'}}  color={'#1B3764'}>Writer of Hack Productivity </Typography>
+                          <Typography sx={{opacity:'0.7'}}>How to navigate around the interface and toggle on/off the panels you wish to use.</Typography>
+                        </Stack>
+                    </Stack>
+                  </Stack>
+                  </Stack>
+
+                  <Stack>
+                    <img src={'./Imge/Image.jpg'} />
+                  </Stack>
+                  </Stack>
+                </Container>
+
           <Container>
             <Aside/>
             <HomeDB/>
