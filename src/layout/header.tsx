@@ -9,7 +9,7 @@ function Header() {
     <>
     <Box py={2} sx={{backgroundColor:'#1B3764' , color:'white'}}>
       <Container>
-        <Stack justifyContent={"space-between"}  flexDirection={'row'} alignItems={"center"}>
+        <Stack justifyContent={"space-between"}  flexDirection={'row'} alignItems={"baseline"}>
         <Stack gap={1} flexDirection={'row'} alignItems={'center'} >
           <img className="imge-header" src={"./Imge/Vector1.svg"}/>
           <Typography variant="h4" component={"h3"}>Pages</Typography>

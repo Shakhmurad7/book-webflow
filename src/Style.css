@@ -91,3 +91,33 @@ ul li{
     padding: 10px;
     
 }
+.page-list{
+    position: relative;
+    /* border: 1px solid ; */
+}
+.list{
+    position: absolute;
+    transition: 0.5s;
+    height: 0;
+    top:70px;
+    overflow: hidden;
+    padding:0;
+    margin-left: -20px;
+    padding: 0 30px;
+}
+.list.active{
+    margin-left: -20px;
+    padding: 10px 30px;
+    overflow: visible;
+    height: auto;
+    top: 70px;
+    background-color: white;
+    position: absolute;
+    height: auto;
+    align-items: flex-start;
+}
+.list.active li{
+    text-align: start;
+    color: black;
+
+}
