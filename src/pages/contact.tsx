@@ -34,11 +34,11 @@ function Contact() {
                 Keep in Touch
                 <span style={{
                   position: 'absolute',
-                  left:"40%",
+                  left:"0",
                   content: '',
                   bottom:'-10px',
-                  width: '20%',
-                  height: '3px',
+                  width: '10%',
+                  height: '5px',
                   backgroundColor: '#FFCA42',
                 }}></span>
             </Typography> 
@@ -71,20 +71,28 @@ function Contact() {
                 </Stack>
         </Stack>
                 
-        <Stack width={{ xs: '100%', md: '500px' }}>
-      <Stack gap={2} flexDirection={'row'}>
-        <input className="input-contact" type="text" />
-        <input className="input-contact" type="email" />
+        <Stack width={{ xs: '100%', md: '550px' }} gap={2}>
+      <Stack gap={2} flexDirection={'row'} position={"relative"}>
+        <input className="input-contact" type="text"  placeholder="Name" />
+        <input className="input-contact" type="email" placeholder="Email"  />
+        <img  className="img-contact-1" src={'./Imge/user.svg'} />
+        <img  className="img-contact-2" src={'./Imge/mail.svg'} />
       </Stack>
-      <input className="input-contact" type="number" name="" id="" />
-      <textarea cols={30} rows={10}></textarea>
+      <Box  position={"relative"}>
+        <img className="img-contact-3" src={'./Imge/phone.svg'} />
+      <input className="input-contact" type="number" name="" id="" placeholder="Phone" />
+      </Box>
+      <Box  position={"relative"}>
+        <img className="img-contact-4" src={'./Imge/edit.svg'} />
+        <textarea placeholder="Message"  cols={30} rows={10}></textarea >
+      </Box>
       <Stack flexDirection={'row'} gap={2}>
         <input type="checkbox" name="" id="" />
         <Typography>
           Keep me up to date with news and offers from time to time by email
         </Typography>
       </Stack>
-      <Typography width={'100%'} p={1}>
+      <Typography sx={{backgroundColor:'#FFCA42' , color:"#1B3764" , textAlign:"center" , cursor:'pointer'}} width={'100%'} p={1}>
         Send Message
       </Typography>
     </Stack>

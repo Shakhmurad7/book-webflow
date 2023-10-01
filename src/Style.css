@@ -126,10 +126,43 @@ ul li{
     width: 100%;
 
 }
+.input-contact:hover , textarea:hover{
+    box-shadow: 0px 0px 20px #FFCA42;
+}
 .input-contact{
-    padding: 5px;
+    transition: .5s;
+    padding: 8px 8px 8px 45px;
     width: 100%;
     border: none;
     border: 1px solid rgba(0, 0, 0, 0.259);
-    outline: none;
+    outline: 
+    #FFCA42;
+}
+textarea{
+    transition: .5s;
+    resize: none;
+    padding: 8px 8px 8px 45px;
+    width: 100%;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.259);
+    outline: 
+    #FFCA42;
+}   
+.css-81k60e-MuiStack-root{
+    color: white !important;
+}
+.img-contact-1{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.img-contact-2{
+    position: absolute;
+    right: 225px;
+    top: 5px;
+}
+.img-contact-3 , .img-contact-4{
+    position: absolute;
+    left: 10px;
+    top: 5px;
 }

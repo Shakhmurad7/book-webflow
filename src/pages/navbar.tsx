@@ -23,7 +23,7 @@ function Navbar() {
               <li>store</li>
             </ul>
           {
-            open === true? <ExpandLessIcon/>: <ExpandMoreIcon /> 
+            open === true? < ExpandMoreIcon /> : < ExpandLessIcon/>
           }
         </Stack>
         <Link to={'/about'}><li>About</li></Link> 
