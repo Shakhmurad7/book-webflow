@@ -166,3 +166,15 @@ textarea{
     left: 10px;
     top: 5px;
 }
+.closeaccardion{
+    transition: .4s;
+    height: 0;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+.accardion{
+    width: fit-content;
+    transition: .4s;
+    padding:10px ;
+    height: auto;
+}

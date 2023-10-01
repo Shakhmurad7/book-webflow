@@ -1,5 +1,6 @@
 import LayoutContainer from "../companents/layoutContainer"
 import { Box, Container, Stack, Typography } from "@mui/material"
+import Accardion from "../db/accardion"
 
 function Contact() {
   return (
@@ -97,6 +98,10 @@ function Contact() {
       </Typography>
     </Stack>
     </Stack>
+</Container>
+
+<Container sx={{py:10}}>
+        <Accardion/>
 </Container>
 
     </LayoutContainer>
