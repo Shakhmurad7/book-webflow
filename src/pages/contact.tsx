@@ -27,9 +27,9 @@ function Contact() {
         </Container>
     </Box>
 
-<Container>
+<Container sx={{py:10}}>
     <Stack flexDirection={'row'} justifyContent={"space-between"} gap={5}>
-        <Stack gap={3}>
+        <Stack gap={3} width={{xs:'100%' , md:'600px'}}>
         <Typography position={'relative'} variant='h4' component={"h4"}>
                 Keep in Touch
                 <span style={{
@@ -71,14 +71,14 @@ function Contact() {
                 </Stack>
         </Stack>
                 
-            <Stack width={{xs:'100%' , md:'350px'}}>
-                    <Stack gap={2}>
+            <Stack width={{xs:'100%' , md:'500px'}}>
+                    <Stack gap={2} flexDirection={'row'}>
                         <input className="input-contact"  type="text" />
                         <input className="input-contact" type="email"/>
                     </Stack>
                     <input className="input-contact" type="number" name="" id="" />
                     <textarea cols="30" rows="10"></textarea>
-                    <Stack>
+                    <Stack flexDirection={'row'} gap={2}>
                         <input type="checkbox" name="" id="" />
                         <Typography>Keep me up to date with news and offers from time to time by email</Typography>
                     </Stack>
