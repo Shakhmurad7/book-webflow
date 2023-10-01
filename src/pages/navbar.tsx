@@ -6,7 +6,7 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { useState } from "react";
 
 function Navbar() {
-  const [open , setopen] = useState(false)
+  const [open , setopen] = useState(true)
   return (
     <>
     <Stack flexDirection={"row"} gap={4} alignItems={"baseline"} >
@@ -18,7 +18,7 @@ function Navbar() {
               Page
             </li>
             <ul className={`list ${open? `list` : `active` } `} >
-              <Link to={'/'}><li>Store</li></Link>
+              <Link to={'/store'}><li>Store</li></Link>
               <li>store</li>
               <li>store</li>
             </ul>
