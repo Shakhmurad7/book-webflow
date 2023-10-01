@@ -71,19 +71,23 @@ function Contact() {
                 </Stack>
         </Stack>
                 
-            <Stack width={{xs:'100%' , md:'500px'}}>
-                    <Stack gap={2} flexDirection={'row'}>
-                        <input className="input-contact"  type="text" />
-                        <input className="input-contact" type="email"/>
-                    </Stack>
-                    <input className="input-contact" type="number" name="" id="" />
-                    <textarea cols="30" rows="10"></textarea>
-                    <Stack flexDirection={'row'} gap={2}>
-                        <input type="checkbox" name="" id="" />
-                        <Typography>Keep me up to date with news and offers from time to time by email</Typography>
-                    </Stack>
-                    <Typography width={"100%"} p={1}>Send Message</Typography>
-            </Stack>
+        <Stack width={{ xs: '100%', md: '500px' }}>
+      <Stack gap={2} flexDirection={'row'}>
+        <input className="input-contact" type="text" />
+        <input className="input-contact" type="email" />
+      </Stack>
+      <input className="input-contact" type="number" name="" id="" />
+      <textarea cols={30} rows={10}></textarea>
+      <Stack flexDirection={'row'} gap={2}>
+        <input type="checkbox" name="" id="" />
+        <Typography>
+          Keep me up to date with news and offers from time to time by email
+        </Typography>
+      </Stack>
+      <Typography width={'100%'} p={1}>
+        Send Message
+      </Typography>
+    </Stack>
     </Stack>
 </Container>
 
