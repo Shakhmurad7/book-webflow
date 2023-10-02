@@ -19,7 +19,7 @@ function Navbar() {
             </li>
             <ul className={`list ${open? `list` : `active` } `} >
               <Link to={'/store'}><li>Store</li></Link>
-              <li>store</li>
+              <Link to={'/blog'}><li>Blog</li></Link>
               <li>store</li>
             </ul>
           {
@@ -27,7 +27,6 @@ function Navbar() {
           }
         </Stack>
         <Link to={'/about'}><li>About</li></Link> 
-        <Link to={'/services'}><li>services</li></Link> 
         <Link to={'/contact'}><li>Contact</li></Link> 
       </Stack>
     </ul>

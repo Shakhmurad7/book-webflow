@@ -101,7 +101,21 @@ function Contact() {
 </Container>
 
 <Container sx={{py:10}}>
+  <Stack gap={7} alignItems={"center"} justifyContent={"center"}>
+    <Typography position={'relative'} variant='h4' component={"h4"}>
+    Frequent Questions?
+                <span style={{
+                  position: 'absolute',
+                  left:"40%",
+                  content: '',
+                  bottom:'-10px',
+                  width: '20%',
+                  height: '3px',
+                  backgroundColor: '#FFCA42',
+                }}></span>
+            </Typography>   
         <Accardion/>
+      </Stack>
 </Container>
 
     </LayoutContainer>
