@@ -3,6 +3,7 @@ import {  Typography } from "@mui/material";
 import axios from "axios"
 import { Stack} from "@mui/system";
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 const url = 'https://book-db-shakhmurad.vercel.app/posts-card'
 
 function CardHome() {
@@ -31,9 +32,9 @@ function CardHome() {
                             {text}
                         </Typography>
                         <Stack flexDirection={'row'} justifyContent={"space-between"} >
-                            <Typography fontWeight={'700'} color={'#1B3764'}>
-                                {title}
-                            </Typography>
+                           <Link to={'/blog'}> 
+                           <Typography fontWeight={'700'} color={'#1B3764'}>{title}</Typography>
+                           </Link>
                             <Typography fontWeight={'700'} color={'#1B3764'}>
                                 {date}
                             </Typography>
