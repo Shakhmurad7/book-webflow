@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 
 interface AccordionItem {
   id: string;
@@ -74,26 +74,32 @@ function AccordionComponent() {
     <>
     <Stack flexDirection={'row'} justifyContent={"space-between"} gap={10} >
 
-    <Stack gap={1}>
+    <Stack gap={2}>
       {accordionData.slice(0,4).map(({ id, text, item }) => (
-          <div className="accardion-container" key={id} onClick={() => accardionopen(id)}>
+          <div style={{ padding:'10px 0px' , boxShadow:` rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px`}} className="accardion-container" key={id} onClick={() => accardionopen(id)}>
           <Stack>
-            <Typography variant="h5" component={"h5"}>
-              {item}
+          <Stack flexDirection={'row'} gap={2} alignItems={"center"}>
+              <Box>{openAccordion===id? <img src={'./Imge/Ellipse 16.svg'}/>: <img src={'./Imge/Ellipse 16 (1).svg'}/> }</Box>
+            <Typography sx={{cursor:"pointer"}} variant="h5" component={"h5"}>
+                {item}
             </Typography>
+            </Stack>
             <Typography className={openAccordion === id ? "accardion" : "closeaccardion"}>{text}</Typography>
           </Stack>
         </div>
       ))}
     </Stack>
 
-<Stack gap={1}>
+<Stack gap={2} >
     {accordionData.slice(4,8).map(({ id, text, item }) => (
-        <div key={id} onClick={() => accardionopen(id)}>
+        <div style={{ padding:'10px 0px' , boxShadow:` rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px`}} key={id} onClick={() => accardionopen(id)}>
           <Stack width={{ xs: "100%", md: "500px" }}>
-            <Typography variant="h5" component={"h5"}>
+            <Stack flexDirection={'row'} gap={2} alignItems={"center"}>
+              <Box>{openAccordion===id? <img src={'./Imge/Ellipse 16.svg'}/>: <img src={'./Imge/Ellipse 16 (1).svg'}/> }</Box>
+            <Typography sx={{cursor:"pointer"}} variant="h5" component={"h5"}>
                 {item}
             </Typography>
+            </Stack>
             <Typography className={openAccordion === id ? "accardion" : "closeaccardion"}>{text}</Typography>
           </Stack>
         </div>
