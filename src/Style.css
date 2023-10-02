@@ -181,3 +181,22 @@ textarea{
 .css-bz6y7s {
     color:white !important;
 }
+.typography{
+    transition: .4s;
+    position: relative;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.typography::after{
+    transition: .4s;
+    bottom: -1px;
+    left: 0;
+    position: absolute;
+    background-color: #FFCA42;
+    height: 2px;
+    width: 0%;
+    content: "";
+}
+.typography:hover::after{
+    width: 100%;
+}

@@ -52,6 +52,7 @@ function Home() {
                   form.
                 </Typography>
                 <Stack flexDirection={"row"} gap={5} alignItems={"center"}>
+                  <Link to={"/contact"}> 
                   <Typography
                     sx={{
                       cursor: "pointer",
@@ -61,19 +62,25 @@ function Home() {
                       width: "fit-content",
                       height: "fit-content",
                       color: "black",
+                      transition:'.4s',
+                      border:"1px solid transparent"
+                      ,
+                      "&:hover":{
+                        backgroundColor:"transparent",
+                        border:'1px solid white'
+                      }
                     }}
                   >
                     Order Today
                   </Typography>
+                  </Link>
+                  <Link to={'/store'} >
                   <Typography
-                    sx={{
-                      borderBottom: "1px solid",
-                      width: "fit-content",
-                      height: "fit-content",
-                    }}
+                  className="typography"
                   >
                     Read Free Demo
                   </Typography>
+                  </Link>
                 </Stack>
 
                 <Stack
@@ -366,6 +373,7 @@ function Home() {
             <Content />
 
             <Stack py={3} textAlign={"center"} alignItems={"center"}>
+              <Link to={'/store'} >
               <Typography
                 mb={2}
                 sx={{ backgroundColor: "#FFCA42", fontSize: "24px" }}
@@ -374,6 +382,8 @@ function Home() {
               >
                 Start a 15-Days Free Trail
               </Typography>
+              </Link>
+             
               <Typography sx={{ opacity: "0.7" }}>
                 Short description about each chapter
               </Typography>
@@ -382,7 +392,7 @@ function Home() {
                   {" "}
                   <Link
                     style={{ color: "blue", textDecoration: "underline" }}
-                    to={"/"}
+                    to={"/contact"}
                   >
                     Have any questions?{" "}
                   </Link>

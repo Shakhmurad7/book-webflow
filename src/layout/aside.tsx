@@ -80,7 +80,7 @@ function Aside() {
               </Stack>
             </Stack>
 
-            <Link to={"/"}>
+            <Link to={"/contact"}>
               <Typography
                 sx={{
                   border: "1px solid #FFCA42",
@@ -156,7 +156,7 @@ function Aside() {
                 </Stack>
               </Stack>
 
-              <Link to={"/"}>
+              <Link to={"/contact"}>
                 <Typography
                   sx={{
                     border: "1px solid #FFCA42",

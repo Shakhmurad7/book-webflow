@@ -9,7 +9,7 @@ function Navbar() {
   const [open , setopen] = useState(true)
   return (
     <>
-    <Stack flexDirection={"row"} gap={4} alignItems={"baseline"} >
+    <Stack flexDirection={"row"} gap={4} alignItems={"center"} >
     <ul>
       <Stack flexDirection={"row"} gap={3} sx={{color:"red"}}>
         <Link to={'/'}><li>Home</li></Link> 
@@ -30,7 +30,7 @@ function Navbar() {
         <Link to={'/contact'}><li>Contact</li></Link> 
       </Stack>
     </ul>
-      <ShoppingCartOutlinedIcon  sx={{cursor:"pointer" , mt:2}} />
+      <ShoppingCartOutlinedIcon  sx={{cursor:"pointer"}} />
     </Stack>
     </>
   )

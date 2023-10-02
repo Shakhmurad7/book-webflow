@@ -32,8 +32,10 @@ function CardHome() {
                             {text}
                         </Typography>
                         <Stack flexDirection={'row'} justifyContent={"space-between"} >
-                           <Link to={'/blog'}> 
-                           <Typography fontWeight={'700'} color={'#1B3764'}>{title}</Typography>
+                           <Link to={'/blog'}  > 
+                           <Typography sx={{"&:hover":{
+                               textDecoration:'underline'
+                           }}} fontWeight={'700'} color={'#1B3764'}>{title}</Typography>
                            </Link>
                             <Typography fontWeight={'700'} color={'#1B3764'}>
                                 {date}
