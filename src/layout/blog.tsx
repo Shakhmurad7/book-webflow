@@ -2,6 +2,7 @@ import LayoutContainer from "../companents/layoutContainer"
 import { Box, Container, Stack, Typography } from "@mui/material"
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { Link } from "react-router-dom"
 function Blog() {
     
     const [data , setdata] = useState([])
@@ -46,7 +47,7 @@ function Blog() {
         data.slice(0,3).map(({id , text, img , title , date , item})=>{
             return(
                 <>
-                    
+                     <Link to={`/blog/${id}`}>
                 <Stack key={id} sx={{backgroundColor:'width' , cursor:"pointer"}} >
                     <img src={`./Imge/${img}.png`} />
                 <Stack p={1} gap={2}>
@@ -66,6 +67,7 @@ function Blog() {
                         </Stack>
                 </Stack>
                 </Stack>
+                </Link>
 
 
                 
@@ -81,7 +83,7 @@ function Blog() {
         data.slice(3,6).map(({id , text, img , title , date , item})=>{
             return(
                 <>
-                    
+                     <Link to={`/blog/${id}`}> 
                 <Stack key={id} sx={{backgroundColor:'width' , cursor:"pointer"}} >
                     <img src={`./Imge/${img}.png`} />
                 <Stack p={1} gap={2}>
@@ -101,6 +103,7 @@ function Blog() {
                         </Stack>
                 </Stack>
                 </Stack>
+                     </Link>
 
 
                 
@@ -116,7 +119,7 @@ function Blog() {
         data.slice(6,9).map(({id , text, img , title , date , item})=>{
             return(
                 <>
-                    
+                     <Link to={`/blog/${id}`}>
                 <Stack key={id} sx={{backgroundColor:'width' , cursor:"pointer"}} >
                     <img src={`./Imge/${img}.png`} />
                 <Stack p={1} gap={2}>
@@ -136,6 +139,7 @@ function Blog() {
                         </Stack>
                 </Stack>
                 </Stack>
+                     </Link>
 
 
                 

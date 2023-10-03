@@ -6,6 +6,7 @@ import Store from "./layout/Store"
 import Contact from "./pages/contact"
 import Blog from "./layout/blog"
 import Singlestore from "./layout/singlestore"
+import SingleCard from "./layout/singleCard"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/store/:id" element={<Singlestore/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/blog" element={<Blog/>}/>
+      <Route path="/blog/:id" element={<SingleCard/>}/>
     </Routes>
     </>
     )

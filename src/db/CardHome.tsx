@@ -21,7 +21,7 @@ function CardHome() {
         data.slice(0,3).map(({id , text, img , title , date , item})=>{
             return(
                 <>
-                    
+               
                 <Stack key={id} sx={{backgroundColor:'width' , cursor:"pointer"}} >
                     <img src={`./Imge/${img}.png`} />
                 <Stack p={1} gap={2}>
@@ -43,6 +43,7 @@ function CardHome() {
                         </Stack>
                 </Stack>
                 </Stack>
+
 
 
                 
