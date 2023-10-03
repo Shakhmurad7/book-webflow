@@ -4,6 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import Navbar from "../pages/navbar";
+import imge from '../../public/Imge/Vector1.svg';
 import { Link } from "react-router-dom";
 function Header() {
   return (
@@ -15,7 +16,7 @@ function Header() {
 
           <Link to={'/'} >
             <Stack flexDirection={"row"} gap={1} color={"white"} alignItems={"center"}>
-          <img className="imge-header" src={"./Imge/Vector1.svg"}/>
+          <img className="imge-header" src={imge}/>
           <Typography variant="h4" component={"h3"}>Pages</Typography>
             </Stack>
           </Link>

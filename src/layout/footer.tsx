@@ -4,6 +4,8 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import imge from '../../public/Imge/Vector1.svg';
+import img from '../../public/Imge/icon.svg'
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -19,7 +21,7 @@ function Footer() {
                 color={"white"}
                 alignItems={"center"}
               >
-                <img className="imge-header" src={"./Imge/Vector1.svg"} />
+                <img className="imge-header" src={imge} />
                 <Typography variant="h4" component={"h3"}>
                   Pages
                 </Typography>
@@ -81,42 +83,42 @@ function Footer() {
                   </Typography>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Link style={{ color: "white", opacity: "0.7" }} to={"/"}>
                       Home
                     </Link>
                   </Stack>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Link style={{ color: "white", opacity: "0.7" }} to={"/"}>
                       About Us
                     </Link>
                   </Stack>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Link style={{ color: "white", opacity: "0.7" }} to={"/"}>
                       Services
                     </Link>
                   </Stack>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Link style={{ color: "white", opacity: "0.7" }} to={"/"}>
                       Appointments
                     </Link>
                   </Stack>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Link style={{ color: "white", opacity: "0.7" }} to={"/"}>
                       Blog
                     </Link>
                   </Stack>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Link style={{ color: "white", opacity: "0.7" }} to={"/"}>
                       Contact Us
                     </Link>
@@ -135,28 +137,28 @@ function Footer() {
                   </Typography>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"} >
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Typography sx={{ opacity: "0.7" }}>
                       404 not found
                     </Typography>
                   </Stack>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Typography sx={{ opacity: "0.7" }}>
                       Password protected
                     </Typography>
                   </Stack>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Typography sx={{ opacity: "0.7" }}>
                        Licenses
                     </Typography>
                   </Stack>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Typography sx={{ opacity: "0.7" }}>
                       Changelog
                     </Typography>
@@ -164,14 +166,14 @@ function Footer() {
 
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                   <Typography sx={{ opacity: "0.7" }}>
                     Licenses 
                   </Typography>
                   </Stack>
 
                   <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-                    <img src={"./Imge/icon.svg"} />
+                    <img src={img} />
                     <Typography sx={{ opacity: "0.7" }}>
                       Changelog
                     </Typography>

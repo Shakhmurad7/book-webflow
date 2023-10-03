@@ -20,7 +20,6 @@ function Navbar() {
             <ul className={`list ${open? `list` : `active` } `} >
               <Link to={'/store'}><li>Store</li></Link>
               <Link to={'/blog'}><li>Blog</li></Link>
-              <li>store</li>
             </ul>
           {
             open === true? < ExpandMoreIcon /> : < ExpandLessIcon/>

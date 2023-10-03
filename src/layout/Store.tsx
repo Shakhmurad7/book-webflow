@@ -2,6 +2,7 @@ import { Box, Container, Stack, Typography } from "@mui/material"
 import LayoutContainer from "../companents/layoutContainer"
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { Link } from "react-router-dom"
 
 const url = 'https://book-db-shakhmurad.vercel.app/posts-card2'
 function Store() {
@@ -61,9 +62,11 @@ function Store() {
                                      }}
                                     ></span>
                                 </Typography>
+                                <Link to={`/store/${id}`}>
                                 <Typography width={'fit-content'} py={1} px={4} color={"#1B3764"} sx={{border:"1px solid #FFCA42" ,  cursor:"pointer" ,transition:'.4s' , "&:hover":{
-                                        backgroundColor:'#FFCA42' , color:'white' }}}  > {next} </Typography>
-                            </Stack>
+                                    backgroundColor:'#FFCA42' , color:'white' }}}  > {next} </Typography>
+                                    </Link>
+                                </Stack>
                             </>
                         )
                     })
@@ -94,8 +97,10 @@ function Store() {
                                      }}
                                     ></span>
                                 </Typography>
+                                <Link to={`/store/${id}`}>
                                 <Typography width={'fit-content'} py={1} px={4} color={"#1B3764"} sx={{border:"1px solid #FFCA42" ,  cursor:"pointer" ,transition:'.4s' , "&:hover":{
-                                        backgroundColor:'#FFCA42' , color:'white' }}}  > {next} </Typography>
+                                    backgroundColor:'#FFCA42' , color:'white' }}}  > {next} </Typography>
+                                    </Link>
                             </Stack>
                             </>
                         )
