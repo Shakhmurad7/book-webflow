@@ -1,5 +1,5 @@
 import { useParams } from 'react-router'
-import {Container, Stack, Typography } from "@mui/material"
+import {Button, Container, Stack, Typography } from "@mui/material"
 import axios from "axios"
 import { useEffect, useState } from "react"
 import LayoutContainer from '../companents/layoutContainer'
@@ -56,7 +56,7 @@ function Singlestore() {
                         <Typography sx={{opacity:'0.7'}} >20 x 14 x 4 cm</Typography>
                     </Stack>
                     <Stack flexDirection={'row'} gap={1}>
-                        <p style={{border:'1px solid #FFCA42' , padding:'8px 20px' , cursor:'pointer' , userSelect:'none'}} onClick={()=>setcount(count+1)} >{count}</p>
+                        <Button sx={{border:'1px solid #FFCA42' , padding:'8px 20px' , cursor:'pointer' , userSelect:'none'}}variant="outlined"  onClick={()=>setcount(count+1)}>{count}</Button>
                         <Typography sx={{px:4 , py:1 , backgroundColor:'#FFCA42' , cursor:'pointer' , alignSelf:'center'}} >Add to Cart</Typography>
                     </Stack>
 
