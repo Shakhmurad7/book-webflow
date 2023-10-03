@@ -202,3 +202,19 @@ textarea{
 .typography:hover::after{
     width: 100%;
 }
+
+.sectionsingle{
+    cursor: pointer;
+    padding: 10px 50px ;
+    background-color: #1B3764;
+    color: white;
+}
+.section-active{
+    cursor: pointer;
+    color: #1B3764;
+    padding: 10px 50px;
+    background-color: #E8ECF2;
+}
+.none{
+    display: none !important;
+}

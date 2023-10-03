@@ -3,6 +3,7 @@ import {Container, Stack, Typography } from "@mui/material"
 import axios from "axios"
 import { useEffect, useState } from "react"
 import LayoutContainer from '../companents/layoutContainer'
+import Sectionsingle from './sectionsingle'
 const url = 'https://book-db-shakhmurad.vercel.app/posts-card2/'
 
 function Singlestore() {
@@ -64,6 +65,8 @@ function Singlestore() {
         </Stack>
         </Container>
 
+
+            <Sectionsingle/>
     </LayoutContainer>
     </>
   )
