@@ -3,7 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbarleft({menu , setmenu}:any) {
   return (
-    <div className='  ' onClick={()=>setmenu(!menu)}>
+    <div className='menu-icon' onClick={()=>setmenu(!menu)}>
  
      <MenuIcon/>
 

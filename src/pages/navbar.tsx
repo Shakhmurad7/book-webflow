@@ -6,6 +6,7 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar({menu,setmenu}:any) {
   const [open , setopen] = useState(true)
@@ -36,8 +37,9 @@ function Navbar({menu,setmenu}:any) {
       </Stack>
     </ul>
     <Stack flexDirection={'row'} gap={5} >
+      <Link to={'/basket'} >
       <ShoppingCartOutlinedIcon sx={{cursor:"pointer" , color:'white'}}/>
-
+      </Link>
       <div onClick={()=>setmenu(!menu)} className="close">
       <CloseIcon/>
       </div>
