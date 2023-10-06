@@ -6,7 +6,7 @@ import { createTheme } from '@mui/material/styles'
         breakpoints: {
           values: {
             xs: 0,
-            sm: 700,
+            sm: 900,
             md: 1100,
             lg: 1350,
             xl: 1536,

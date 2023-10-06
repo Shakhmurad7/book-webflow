@@ -5,10 +5,12 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { useState } from "react";
 
-function Navbar() {
+function Navbar({menu , setmenu}:any) {
   const [open , setopen] = useState(true)
   return (
     <>
+
+      <div className={`menu ${menu? `active` :`menu`}`}>
     <Stack flexDirection={"row"} gap={4} alignItems={"center"} >
     <ul>
       <Stack flexDirection={"row"} gap={3} sx={{color:"red"}}>
@@ -29,8 +31,9 @@ function Navbar() {
         <Link to={'/contact'}><li>Contact</li></Link> 
       </Stack>
     </ul>
-      <ShoppingCartOutlinedIcon  sx={{cursor:"pointer"}} />
+      <ShoppingCartOutlinedIcon sx={{cursor:"pointer"}} />
     </Stack>
+      </div>
     </>
   )
 }
