@@ -1,11 +1,11 @@
 import { Stack } from "@mui/system"
-import { Link } from "react-router-dom"
 import { Box} from "@mui/system"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar({menu,setmenu}:any) {
   const [open , setopen] = useState(true)
@@ -16,14 +16,14 @@ function Navbar({menu,setmenu}:any) {
     <Stack p={{ xs:5, sm:10 , md:0}} flexDirection={"row"} gap={{xs:2, md:4}} justifyContent={'space-between'} alignItems={{xs:"none" , md:'center'}} >
     <ul>
       <Stack fontSize={{xs:'25px', md:'16px'}} flexDirection={{xs:"column" , md:'row'}} gap={3} sx={{color:"red"}}>
-        <Link to={'/'}><li>Home</li></Link> 
+        <NavLink to={'/'}><li>Home</li></NavLink> 
         <Stack sx={{cursor:"pointer"}} flexDirection={'row'} > 
           <li className="page-list" onClick={()=>setopen(!open)}>
               Page
             </li>
             <ul className={`list ${open? `list` : `active` } `} >
-              <Link to={'/store'}><li>Store</li></Link>
-              <Link to={'/blog'}><li>Blog</li></Link>
+              <NavLink to={'/store'}><li>Store</li></NavLink>
+              <NavLink to={'/blog'}><li>Blog</li></NavLink>
             </ul>
             <Box color={'white'} mx={{xs:-4 , md:0}}>
           {
@@ -31,8 +31,8 @@ function Navbar({menu,setmenu}:any) {
           }
           </Box>
         </Stack>
-        <Link to={'/about'}><li>About</li></Link> 
-        <Link to={'/contact'}><li>Contact</li></Link> 
+        <NavLink to={'/about'}><li>About</li></NavLink> 
+        <NavLink to={'/contact'}><li>Contact</li></NavLink> 
       </Stack>
     </ul>
     <Stack flexDirection={'row'} gap={5} >

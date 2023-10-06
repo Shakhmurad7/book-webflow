@@ -227,6 +227,10 @@ textarea{
 .menu-icon{
     cursor: pointer;
 }
+
+a.active li{
+    color: rgb(197, 196, 196);
+}
 .close{
     color: white;
     cursor: pointer;
