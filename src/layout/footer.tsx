@@ -12,7 +12,7 @@ function Footer() {
   return (
     <>
       <Box sx={{ backgroundColor: "#1B3764" }}>
-        <Container sx={{ p: 10 }}>
+        <Container sx={{py:10}}>
           <Grid container>
             <Grid item xs={12} md={3}>
               <Stack
@@ -26,7 +26,7 @@ function Footer() {
                   Pages
                 </Typography>
               </Stack>
-              <Stack flexDirection={"row"} gap={1} py={2}>
+              <Stack flexDirection={'row'} gap={1} py={2}>
                 <FacebookIcon
                   sx={{
                     width: "40px",
@@ -70,8 +70,9 @@ function Footer() {
               </Stack>
             </Grid>
             <Grid item xs={12} md={9}>
-              <Stack flexDirection={"row"} justifyContent={"space-between"}>
-
+              <Stack flexDirection={{sm:'row' , xs:'column'}} gap={5} justifyContent={"space-between"}>
+                
+                  <Stack gap={10} flexDirection={{xs:"column" , md:'row'}}>
                 <Stack gap={1}>
                   <Typography
                     color={"white"}
@@ -179,6 +180,7 @@ function Footer() {
                     </Typography>
                   </Stack>
                 </Stack>
+                  </Stack>
 
                 <Stack gap={2} color={"white"} maxWidth={'400px'}>
                   <Typography

@@ -475,7 +475,7 @@ function Home() {
           <CardHome />
         </Container>
       </Box>
-      <ContentInput />а
+      <ContentInput />
     </LayoutContainer>
   );
 }
