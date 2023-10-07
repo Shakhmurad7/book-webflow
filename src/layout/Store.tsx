@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const url = 'https://book-db-shakhmurad.vercel.app/posts-card2'
-function Store({ cart ,setCart}:any) {
+function Store({addToCart}:any) {
     const [data , setdata] = useState<any>([])
     useEffect(()=>{
         axios.get(url).then(({data})=>{
@@ -14,10 +14,6 @@ function Store({ cart ,setCart}:any) {
         })
     } , [])
 
-
-    const addToCart = (item:any) => {
-        setCart((prevCart: any) => [...prevCart, item]);
-    };
   return (
     <LayoutContainer>
          <Box sx={{backgroundColor:'#1B3764'}}>
