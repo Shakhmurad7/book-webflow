@@ -8,15 +8,17 @@ import Blog from "./layout/blog"
 import Singlestore from "./layout/singlestore"
 import SingleCard from "./layout/singleCard"
 import Basket from "./pages/basket"
+import { useState } from "react"
 
 function App() {
+  const [cart, setCart] = useState([]);
   return (
     <>
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
-      <Route path="/store" element={<Store/>}/>
-      <Route path="/basket" element={<Basket/>}/>
+      <Route path="/store" element={<Store cart ={cart} setCart={setCart} />}/>
+      <Route path="/basket" element={<Basket cart ={cart} setCart={setCart} />}/>
       <Route path="/store/:id" element={<Singlestore/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/blog" element={<Blog/>}/>

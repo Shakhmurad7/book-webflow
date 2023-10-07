@@ -3,15 +3,21 @@ import LayoutContainer from "../companents/layoutContainer"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { Link } from "react-router-dom"
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const url = 'https://book-db-shakhmurad.vercel.app/posts-card2'
-function Store() {
-    const [data , setdata] = useState([])
+function Store({ cart ,setCart}:any) {
+    const [data , setdata] = useState<any>([])
     useEffect(()=>{
         axios.get(url).then(({data})=>{
             setdata(data)
         })
     } , [])
+
+
+    const addToCart = (item:any) => {
+        setCart((prevCart: any) => [...prevCart, item]);
+    };
   return (
     <LayoutContainer>
          <Box sx={{backgroundColor:'#1B3764'}}>
@@ -39,16 +45,16 @@ function Store() {
 <Container>
     <Stack justifyContent={"space-between"} flexDirection={'row'} gap={5} > 
                 {
-                      data.slice(0,3).map(({text , item , id, img , title , price , next})=>{
+                      data.slice(0,3).map((item:any)=>{
                         return(
-                            <><Stack gap={2} key={id} width={{xs:'100%' , md:'300px'}}>
-                                <img className='img-card-store'  src={`./Imge/${img}.png`} />
+                            <><Stack gap={2} key={item.id} width={{xs:'100%' , md:'300px'}}>
+                                <img className='img-card-store'  src={`./Imge/${item.img}.png`} />
                                 <Stack  pr={5} flexDirection={'row'} justifyContent={"space-between"}>
-                                    <Typography  fontWeight={"700"} fontSize={"22px"} color={"#1B3764"} >{item}</Typography>
-                                    <Typography  fontWeight={"700"} fontSize={"18px"} color={"#FFCA42"}>${price}</Typography>
+                                    <Typography  fontWeight={"700"} fontSize={"22px"} color={"#1B3764"} >{item.item}</Typography>
+                                    <Typography  fontWeight={"700"} fontSize={"18px"} color={"#FFCA42"}>${item.price}</Typography>
                                 </Stack>
-                                <Typography sx={{opacity:"0.7"}} >{text}</Typography>
-                                <Typography ml={2} color={"#1B3764"} position={"relative"} >{title}
+                                <Typography sx={{opacity:"0.7"}} >{item.text}</Typography>
+                                <Typography ml={2} color={"#1B3764"} position={"relative"} >{item.title}
                                 <span
                                     style={{
                                     position: "absolute",
@@ -59,13 +65,18 @@ function Store() {
                                     height: "10px",
                                     backgroundColor: "#FFCA42",
                                     borderRadius:"50%"
-                                     }}
-                                    ></span>
+                                }}
+                                ></span>
                                 </Typography>
-                                <Link to={`/store/${id}`}>
+                                <Stack flexDirection={"row"} gap={5} alignItems={"center"}>
+                                <Link to={`/store/${item.id}`}>
                                 <Typography width={'fit-content'} py={1} px={4} color={"#1B3764"} sx={{border:"1px solid #FFCA42" ,  cursor:"pointer" ,transition:'.4s' , "&:hover":{
-                                    backgroundColor:'#FFCA42' , color:'white' }}}  > {next} </Typography>
+                                    backgroundColor:'#FFCA42' , color:'white' }}}  > {item.next} </Typography>
                                     </Link>
+                                    <div onClick={()=>addToCart(item)}>
+                                    <ShoppingCartOutlinedIcon sx={{cursor:"pointer"}}/>
+                                    </div>
+                                    </Stack>
                                 </Stack>
                             </>
                         )
@@ -74,16 +85,16 @@ function Store() {
     </Stack>
     <Stack justifyContent={"space-between"} flexDirection={'row'} gap={5} py={6}> 
                 {
-                    data.slice(3,6).map(({text , item , id, img , title , price , next})=>{
+                    data.slice(3,6).map((item:any)=>{
                         return(
-                            <><Stack gap={2} key={id} width={{xs:'100%' , md:'300px'}}>
-                                <img className='img-card-store'  src={`./Imge/${img}.png`} />
+                            <><Stack gap={2} key={item.id} width={{xs:'100%' , md:'300px'}}>
+                                <img className='img-card-store'  src={`./Imge/${item.img}.png`} />
                                 <Stack  pr={5} flexDirection={'row'} justifyContent={"space-between"}>
-                                    <Typography  fontWeight={"700"} fontSize={"22px"} color={"#1B3764"} >{item}</Typography>
-                                    <Typography  fontWeight={"700"} fontSize={"18px"} color={"#FFCA42"}>${price}</Typography>
+                                    <Typography  fontWeight={"700"} fontSize={"22px"} color={"#1B3764"} >{item.item}</Typography>
+                                    <Typography  fontWeight={"700"} fontSize={"18px"} color={"#FFCA42"}>${item.price}</Typography>
                                 </Stack>
-                                <Typography sx={{opacity:"0.7"}} >{text}</Typography>
-                                <Typography ml={2} color={"#1B3764"} position={"relative"}>{title} 
+                                <Typography sx={{opacity:"0.7"}} >{item.text}</Typography>
+                                <Typography ml={2} color={"#1B3764"} position={"relative"}>{item.title} 
                                 <span
                                     style={{
                                     position: "absolute",
@@ -97,10 +108,15 @@ function Store() {
                                      }}
                                     ></span>
                                 </Typography>
-                                <Link to={`/store/${id}`}>
+                                <Stack flexDirection={"row"} gap={5} alignItems={"center"}>
+                                <Link to={`/store/${item.id}`}>
                                 <Typography width={'fit-content'} py={1} px={4} color={"#1B3764"} sx={{border:"1px solid #FFCA42" ,  cursor:"pointer" ,transition:'.4s' , "&:hover":{
-                                    backgroundColor:'#FFCA42' , color:'white' }}}  > {next} </Typography>
+                                    backgroundColor:'#FFCA42' , color:'white' }}}  > {item.next} </Typography>
                                     </Link>
+                                    <div onClick={()=>addToCart(item)}>
+                                    <ShoppingCartOutlinedIcon sx={{cursor:"pointer"}}/>
+                                    </div>
+                                    </Stack>
                             </Stack>
                             </>
                         )
