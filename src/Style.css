@@ -278,6 +278,13 @@ a.active li{
     padding: 20px;
 }
 @media(max-Width:1100px){
+    .hero-img{
+        
+        display: none;
+    }
+    .section-home{
+        display: none;
+    }
     .page-list{
         position: relative;
     }

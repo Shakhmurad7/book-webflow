@@ -28,9 +28,9 @@ function Aside() {
 
     <Grid container py={5}>
       <Grid item xs={12} md={6}>
-        <Grid container spacing={12} alignItems={"center"}>
-          <Grid item xs={12} md={6}>
-            <img src={"./Imge/Book (1).png"} />
+        <Grid container spacing={{xs:0 , md:6}} alignItems={"center"}>
+        <Grid item xs={12} md={6} width={'100%'} justifyContent={"center"} display={"flex"}>
+            <img style={{maxWidth:'500px' , height:'500px', objectFit:"contain", width:'100%'}} src={"./Imge/Book (2).png"} />
           </Grid>
 
           <Grid item xs={12} md={6}>
@@ -102,10 +102,10 @@ function Aside() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <Grid container spacing={12} alignItems={"center"}>
-          <Grid item xs={12} md={6}>
-            <img src={"./Imge/Book (2).png"} />
+      <Grid item xs={12} md={6} py={{xs:5 , md:0}}>
+        <Grid container spacing={{xs:0 , md:6}} alignItems={"center"} justifyContent={"center"}>
+          <Grid item xs={12} md={6} width={'100%'} justifyContent={"center"} display={"flex"}>
+            <img style={{maxWidth:'500px' , height:'500px', objectFit:"contain", width:'100%'}} src={"./Imge/Book (2).png"} />
           </Grid>
 
           <Grid item xs={12} md={6}>

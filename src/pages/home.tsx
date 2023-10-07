@@ -145,7 +145,7 @@ function Home() {
               </Stack>
             </Grid>
             <Grid item xs={12} md={6}>
-              <img style={{ width: "80%" }} src={"./Imge/Book.png"} />
+              <img className="hero-img" style={{ width: "80%" }} src={"./Imge/Book.png"} />
             </Grid>
           </Grid>
         </Container>
@@ -246,7 +246,7 @@ function Home() {
           </Typography>
           <Grid container py={10}>
             <Grid item xs={12} md={6}>
-              <Stack flexDirection={"row"} gap={3}>
+              <Stack flexDirection={{xs:'column' , sm:'row'}} gap={3} alignItems={"center"} justifyContent={"center"}>
                 <Stack>
                   <Stack
                     gap={1.5}
@@ -292,7 +292,7 @@ function Home() {
                   </Stack>
                 </Stack>
               </Stack>
-              <Stack flexDirection={"row"} gap={3} pt={3}>
+              <Stack flexDirection={{xs:'column' , sm:'row'}} gap={3} pt={3} alignItems={"center"} justifyContent={"center"}>
                 <Stack>
                   <Stack
                     gap={1.5}
