@@ -13,9 +13,9 @@ function CardRight() {
         } , [])
   return (
     <>
-    <Stack flexDirection={'row'} gap={2} alignItems={"center"}>
+    <Stack flexDirection={{sm:'row' , xs:'column'}} justifyContent={"center"} gap={2} alignItems={"center"}>
 
-    <Stack gap={2}>
+    <Stack  gap={2}>
 
         {
             data.slice(0,1).map(({text , id , title , img1 , img2 , item})=>{

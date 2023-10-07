@@ -347,6 +347,8 @@ function Home() {
           </Grid>
         </Stack>
       </Container>
+
+      
       <Box sx={{ backgroundColor: "#F4F8FF", py: 5 }}>
         <Container>
           <Stack justifyContent={"center"} alignItems={"center"}>
@@ -355,6 +357,7 @@ function Home() {
               position={"relative"}
               variant="h4"
               component={"h4"}
+              fontSize={{xs:'25px' , sm:'30px'}}
             >
               {" "}
               The Chapter Includes
@@ -404,12 +407,12 @@ function Home() {
         </Container>
       </Box>
       <Container sx={{ py: 10 }}>
-        <Stack
+        <Stack 
           flexDirection={"row"}
-          justifyContent={"space-between"}
+          justifyContent={{md:'space-between' , xs:'center'}}
           alignItems={"center"}
         >
-          <Stack width={"500px"} gap={3}>
+          <Stack display={{xs:'none' , md:'flex'}} width={"500px"} gap={3}>
             <Typography
               width={"250px"}
               color={"#1B3764"}
@@ -454,6 +457,7 @@ function Home() {
             <Typography
               variant="h4"
               component={"h4"}
+              fontSize={{xs:"25px" , md:'30px'}}
               sx={{ fontWeight: "700", color: "#1B3764" }}
               position={"relative"}
             >

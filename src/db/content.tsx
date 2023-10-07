@@ -21,11 +21,11 @@ function Content() {
     <>
     <Stack>
 
-    <Stack flexDirection={'row'} gap={4} py={3}>
+    <Stack flexDirection={{sm:'row' , xs:"column"}} gap={4} py={3}>
         {
             data.slice(0,2).map(({text , id , item , pags , Length}:any)=>{
                 return(
-                    <Stack gap={2} sx={{backgroundColor:'white' , p:4}} key={id} width={{md:'500px' , xs:'200px' }}> 
+                    <Stack gap={2} sx={{backgroundColor:'white' , p:4}} key={id} width={{md:'500px' , xs:'100%' }}> 
                         <Typography color={'#1B3764'} fontSize={'20px'} >{item}</Typography>
                         <Typography sx={{opacity:'0.7'}} >{text}</Typography>
                         <Stack gap={6} flexDirection={'row'} pl={3}>
@@ -61,11 +61,11 @@ function Content() {
         }
     </Stack>
 
-    <Stack flexDirection={'row'} gap={4} py={3}>
+    <Stack flexDirection={{sm:'row' , xs:"column"}} gap={4} py={3}>
         {
             data.slice(2,4).map(({text , id , item , pags , Length}:any)=>{
                 return(
-                    <Stack gap={2} sx={{backgroundColor:'white' , p:4}} key={id} width={{md:'500px' , xs:'200px' }}> 
+                    <Stack gap={2} sx={{backgroundColor:'white' , p:4}} key={id} width={{md:'500px' , xs:'100%' }}> 
                         <Typography color={'#1B3764'} fontSize={'20px'} >{item}</Typography>
                         <Typography sx={{opacity:'0.7'}} >{text}</Typography>
                         <Stack gap={6} flexDirection={'row'} pl={3}>

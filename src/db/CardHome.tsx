@@ -15,7 +15,7 @@ function CardHome() {
     })
   return (
 <>
-<Stack flexDirection={'row'} gap={3} py={6}>
+<Stack flexDirection={'row'}  gap={3} py={6}>
                     
     {
         data.slice(0,3).map(({id , text, img , title , date , item})=>{
@@ -23,7 +23,7 @@ function CardHome() {
                 <>
                
                 <Stack key={id} sx={{backgroundColor:'width' , cursor:"pointer"}} >
-                    <img src={`./Imge/${img}.png`} />
+                    <img style={{width:'100%' , height:'100%'}} src={`./Imge/${img}.png`} />
                 <Stack p={1} gap={2}>
                         <Typography fontWeight={'700'}  color={`#1B3764`} fontSize={'25px'} >
                             {item}
