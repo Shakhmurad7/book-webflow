@@ -1,5 +1,6 @@
-
+import { Box, Container, Stack, Typography } from "@mui/material"
 import LayoutContainer from "../companents/layoutContainer";
+import CloseIcon from '@mui/icons-material/Close';
 
 function Basket({ cartItems, setCartItems }: any) {
   const removeFromCart = (productId: any) => {
@@ -19,13 +20,35 @@ function Basket({ cartItems, setCartItems }: any) {
   return (
     <LayoutContainer>
     {cartItems && totalItemCount !==0? (
-        <div>
+        <div className="basket-big-contaner">
             {cartItems.map((item: any) => {
                 return (
-                    <div key={item.id}>
-            <h1>{item.title}</h1>
-            <button onClick={() => removeFromCart(item.id)}>Remove</button>
-          </div>
+                    <Container>
+                    <div className="container-basket" key={item.id}>
+                    <div className="basket-page">
+                        <img className="basket-img" src={`./Imge/${item.img}.png`}/>
+
+                        <div className="basket-ad">
+                            <h3>mehsulun adi</h3>
+                            <h3>{item.item}</h3>
+                        </div>
+
+                        <div className="basket-say">
+                            <h3>say</h3>
+                            <h3>{item.count}</h3>
+                        </div>
+
+                        <div className="basket-price">
+                            <h3>qiymet</h3>
+                            <h3>{item.count * item.price} $</h3>
+                        </div>
+                    </div>
+
+                        <div className="basket-close" onClick={() => removeFromCart(item.id)}>
+                            <CloseIcon/>
+                        </div>
+                    </div>
+                    </Container>
         );
     })}
     <h1>Total Items: {totalItemCount}</h1>

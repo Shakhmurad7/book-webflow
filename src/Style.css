@@ -237,6 +237,46 @@ a.active li{
     cursor: pointer;
     display: none;
 }
+
+
+
+/* ----basket----- */
+.basket-big-contaner{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container-basket{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.basket-page{
+    display: flex;
+    gap: 50px;
+}
+.basket-img{
+    width: 150px;
+    height: 150px;
+}
+.basket-close{
+    cursor: pointer;
+}
+.basket-ad {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+ .basket-say , .basket-price{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.basket-close{
+    padding: 20px;
+}
 @media(max-Width:1100px){
     .page-list{
         position: relative;

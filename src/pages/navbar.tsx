@@ -10,6 +10,11 @@ import { Link } from "react-router-dom";
 
 function Navbar({menu,setmenu}:any) {
   const [open , setopen] = useState(true)
+  
+  // const totalItemCount = cartItems.reduce(
+  //   (total: any, item: { count: any }) => total + item.count,
+  //   0
+  // );
   return (
     <>
 
@@ -38,7 +43,10 @@ function Navbar({menu,setmenu}:any) {
     </ul>
     <Stack flexDirection={'row'} gap={5} >
       <Link to={'/basket'} >
-      <ShoppingCartOutlinedIcon sx={{cursor:"pointer" , color:'white'}}/>
+        <Stack>
+          <ShoppingCartOutlinedIcon sx={{cursor:"pointer" , color:'white'}}/>
+          {/* <p>{totalItemCount}</p> */}
+        </Stack>
       </Link>
       <div onClick={()=>setmenu(!menu)} className="close">
       <CloseIcon/>

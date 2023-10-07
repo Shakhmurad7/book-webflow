@@ -30,7 +30,7 @@ function Header() {
              </Stack> 
         </Stack>
 
-          <Navbar menu={menu} setmenu={setmenu}/>
+          <Navbar menu={menu} setmenu={setmenu} />
 
            <Link to={'/contact'}><Typography display={{xs:'none' , md:'flex'}} sx={{ cursor:"pointer" ,backgroundColor:'#FFCA42' , px:"40px" , py:"10px", width:"fit-content", height:'fit-content', color:"black"}}>Order Today</Typography></Link>
            <Stack display={{xs:"felx" , md:'none'}}>
