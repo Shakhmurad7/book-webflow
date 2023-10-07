@@ -6,7 +6,13 @@ import LayoutContainer from '../companents/layoutContainer'
 import Sectionsingle from './sectionsingle'
 const url = 'https://book-db-shakhmurad.vercel.app/posts-card2/'
 
-function Singlestore() {
+function Singlestore({addToCart , cartItems}:any) {
+
+    const totalItemCount = cartItems.reduce(
+        (total: any, item: { count: any }) => total + item.count,
+        0
+      );
+
     const [count , setcount] = useState(0)
     const {id} = useParams()
     const [data , setdata] = useState<any>({})
@@ -56,8 +62,11 @@ function Singlestore() {
                         <Typography sx={{opacity:'0.7'}} >20 x 14 x 4 cm</Typography>
                     </Stack>
                     <Stack flexDirection={'row'} gap={1}>
-                        <Button sx={{border:'1px solid #FFCA42' , padding:'8px 20px' , cursor:'pointer' , userSelect:'none'}}variant="outlined"  onClick={()=>setcount(count+1)}>{count}</Button>
-                        <Typography sx={{px:4 , py:1 , backgroundColor:'#FFCA42' , cursor:'pointer' , alignSelf:'center'}} >Add to Cart</Typography>
+                        <Button 
+                        sx={{border:'1px solid #FFCA42' , padding:'8px 20px' , cursor:'pointer' , userSelect:'none'}}variant="outlined"  onClick={()=>setcount(count+1)}>{totalItemCount}</Button>
+                        <div onClick={()=>addToCart(data)}>
+                        <Typography  sx={{px:4 , py:1 , backgroundColor:'#FFCA42' , cursor:'pointer' , alignSelf:'center'}} >Add to Cart</Typography>
+                        </div>
                     </Stack>
 
                 </Stack>

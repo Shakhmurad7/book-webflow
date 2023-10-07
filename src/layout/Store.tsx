@@ -70,7 +70,11 @@ function Store({addToCart}:any) {
                                     backgroundColor:'#FFCA42' , color:'white' }}}  > {item.next} </Typography>
                                     </Link>
                                     <div onClick={()=>addToCart(item)}>
-                                    <ShoppingCartOutlinedIcon sx={{cursor:"pointer"}}/>
+                                        <ShoppingCartOutlinedIcon sx={{cursor:"pointer" ,fontSize:'40px' , p:1 , borderRadius:'50%' , transition:'.4s', '&:hover':{
+                                            backgroundColor:'#1B3764',
+                                            color:'white'
+
+                                        }}}/>
                                     </div>
                                     </Stack>
                                 </Stack>
@@ -110,7 +114,11 @@ function Store({addToCart}:any) {
                                     backgroundColor:'#FFCA42' , color:'white' }}}  > {item.next} </Typography>
                                     </Link>
                                     <div onClick={()=>addToCart(item)}>
-                                    <ShoppingCartOutlinedIcon sx={{cursor:"pointer"}}/>
+                                        <ShoppingCartOutlinedIcon sx={{cursor:"pointer" ,fontSize:'40px' , p:1 , borderRadius:'50%' , transition:'.4s', '&:hover':{
+                                            backgroundColor:'#1B3764',
+                                            color:'white'
+
+                                        }}}/>
                                     </div>
                                     </Stack>
                             </Stack>
