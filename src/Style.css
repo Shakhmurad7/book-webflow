@@ -2,6 +2,9 @@
     width: 30px;
     height: 30px;
 }
+body{
+    overflow-x: hidden;
+}
 *{
     font-family: 'Cardo', serif;
     padding: 0;

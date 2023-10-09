@@ -27,10 +27,10 @@ function Singlestore({addToCart , cartItems}:any) {
     <>
     <LayoutContainer>
         <Container sx={{ py:10,}}>
-            <Stack sx={{justifyContent:'center' , alignItems:'center'}}  >
+            <Stack sx={{justifyContent:'center' , alignItems:'center'}}>
 
-            <Stack flexDirection={'row'} gap={5} width={{md:'900px' , xs:'100%'}}>
-                <img src={`../Imge/${data.img}.png`}/>
+            <Stack flexDirection={{xs:"column" , sm:'row'}} gap={{xs:1 , sm:5}} width={{md:'900px' , xs:'100%'}}>
+                <img style={{width:'100%' , height:"100%"  , maxWidth:'400px'}}  src={`../Imge/${data.img}.png`}/>
                 <Stack gap={2}>
                     <Typography sx={{color:"#1B3764" , fontWeight:'700', fontSize:'28px'}} >{data.item}</Typography>
                     <Typography sx={{color:'#FFCA42' , fontWeight:'700' , fontSize:"22px"}}>${data.price}USD</Typography>
