@@ -39,11 +39,11 @@ function Store({addToCart}:any) {
     </Box>
 
 <Container>
-    <Stack justifyContent={"space-between"} flexDirection={'row'} gap={5} > 
+    <Stack justifyContent={"space-between"} alignItems={"center"} flexDirection={{xs:"column" , sm:'row'}}   gap={5} width={'100%'} > 
                 {
                       data.slice(0,3).map((item:any)=>{
                         return(
-                            <><Stack gap={2} key={item.id} width={{xs:'100%' , md:'300px'}}>
+                            <><Stack gap={2}  key={item.id} width={{xs:'100%' , md:'300px'}} maxWidth={'300px'}>
                                 <img className='img-card-store'  src={`./Imge/${item.img}.png`} />
                                 <Stack  pr={5} flexDirection={'row'} justifyContent={"space-between"}>
                                     <Typography  fontWeight={"700"} fontSize={"22px"} color={"#1B3764"} >{item.item}</Typography>
@@ -83,11 +83,11 @@ function Store({addToCart}:any) {
                     })
                 }
     </Stack>
-    <Stack justifyContent={"space-between"} flexDirection={'row'} gap={5} py={6}> 
+    <Stack justifyContent={"space-between"} alignItems={"center"}  flexDirection={{xs:"column" , sm:'row'}} gap={5} py={6} > 
                 {
                     data.slice(3,6).map((item:any)=>{
                         return(
-                            <><Stack gap={2} key={item.id} width={{xs:'100%' , md:'300px'}}>
+                            <><Stack gap={2} key={item.id} width={{xs:'100%' , md:'300px'}}  maxWidth={'300px'}>
                                 <img className='img-card-store'  src={`./Imge/${item.img}.png`} />
                                 <Stack  pr={5} flexDirection={'row'} justifyContent={"space-between"}>
                                     <Typography  fontWeight={"700"} fontSize={"22px"} color={"#1B3764"} >{item.item}</Typography>
