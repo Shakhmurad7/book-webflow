@@ -27,6 +27,8 @@ function Basket({ cartItems, setCartItems }: any) {
                     <div className="container-basket" key={item.id}>
                     <div className="basket-page">
                         <img className="basket-img" src={`./Imge/${item.img}.png`}/>
+                        
+                  <div className="basket-item-container">
 
                         <div className="basket-ad">
                             <h3>mehsulun adi</h3>
@@ -42,6 +44,8 @@ function Basket({ cartItems, setCartItems }: any) {
                             <h3>qiymet</h3>
                             <h3>{item.count * item.price} $</h3>
                         </div>
+                  </div>
+
                     </div>
 
                         <div className="basket-close" onClick={() => removeFromCart(item.id)}>
