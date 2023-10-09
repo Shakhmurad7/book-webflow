@@ -195,7 +195,8 @@ function Home() {
               alignItems={"center"}
               sx={{ backgroundColor: "#1B3764" }}
               gap={2}
-              flexDirection={"row"}
+              flexDirection={{xs:'column' , sm:'row'}}
+              textAlign={{xs:"center" , sm:"start"} }
               width={"fit-content"}
             >
               <img width={"100px"} height={"100px"} src={"./Imge/Image.png"} />

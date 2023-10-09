@@ -325,4 +325,11 @@ a.active li{
     .close{
         display: block;
     }
+    .content-home::after{
+        color: transparent;
+    }
+    .img-content{
+        width: 100%;
+        height: 100%;
+    }
 }
