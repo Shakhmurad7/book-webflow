@@ -10,6 +10,7 @@ function Aside() {
         sx={{ position: "relative" }}
         variant="h3"
         component={"h3"}
+        fontSize={{xs:'25px' , sm:'40px'}}
       >
         Author’s Book Includes
         <span

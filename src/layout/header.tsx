@@ -23,7 +23,7 @@ function Header() {
           <Typography variant="h4" component={"h3"}>Pages</Typography>
             </Stack>
           </Link>
-              <Stack flexDirection={'row'} gap={1} px={3}>
+              <Stack flexDirection={'row'} gap={1} px={3} display={{xs:'none ', sm:"flex"}}>
                   <FacebookIcon  sx={{backgroundColor:'white' , width:'40px' , p:'8px' ,  height:'40px' , color:'#1B3764',  cursor:'pointer'} }  />
                   <InstagramIcon  sx={{backgroundColor:'white' ,width:'40px' , p:'8px' ,  height:'40px' ,  color:'#1B3764', cursor:'pointer'}}  />
                   <TwitterIcon  sx={{backgroundColor:'white' , width:'40px' , p:'8px' ,  height:'40px' , color:'#1B3764', cursor:'pointer'}}  />

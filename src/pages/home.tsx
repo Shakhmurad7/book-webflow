@@ -15,8 +15,8 @@ function Home() {
     <LayoutContainer>
 
       {/* ----Header-content----- */}
-      <Box color={"white"} p={5} sx={{ backgroundColor: "#1B3764" }}>
-        <Container>
+      <Box color={"white"}  p={{xs:0  , sm:5}} sx={{ backgroundColor: "#1B3764" }}>
+        <Container sx={{py:5}} >
           <Grid
             container
             spacing={10}
@@ -51,7 +51,7 @@ function Home() {
                   available, but the majority have suffered alteration in some
                   form.
                 </Typography>
-                <Stack flexDirection={"row"} gap={5} alignItems={"center"}>
+                <Stack  flexDirection={{xs:"column" ,sm:'row'}} gap={5} alignItems={{xs:"flex-start" , sm:"center"}}>
                   <Link to={"/contact"}> 
                   <Typography
                     sx={{
@@ -86,7 +86,7 @@ function Home() {
                 <Stack
                   px={3}
                   py={4}
-                  flexDirection={"row"}
+                  flexDirection={{xs:"column" ,sm:'row'}}
                   gap={2}
                   justifyContent={"space-between"}
                 >
@@ -229,6 +229,7 @@ function Home() {
             position={"relative"}
             width={"fit-content"}
             color={"#1B3764"}
+            fontSize={{xs:'25px' , sm:'40px'}}
             variant="h4"
             component={"h4"}
           >
@@ -382,7 +383,7 @@ function Home() {
                 mb={2}
                 sx={{ backgroundColor: "#FFCA42", fontSize: "24px" }}
                 py={1}
-                px={8}
+                px={{xs:1 , sm:8}}
               >
                 Start a 15-Days Free Trail
               </Typography>
