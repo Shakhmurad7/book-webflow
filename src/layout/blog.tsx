@@ -39,9 +39,9 @@ function Blog() {
 
 
 
-<Container sx={{py:10}}>
+<Container sx={{py:10}}  sx={{alignItems:'center', display:"flex" , flexDirection:'column'}}>
 
-<Stack flexDirection={'row'} gap={3} py={6}>
+<Stack flexDirection={{xs:"column" , sm:'row'}} gap={3} py={6}>
                     
     {
         data.slice(0,3).map(({id , text, img , title , date , item})=>{
@@ -49,8 +49,8 @@ function Blog() {
                 <>
                      <Link to={`/blog/${id}`}>
                 <Stack key={id} sx={{backgroundColor:'width' , cursor:"pointer"}} >
-                    <img src={`./Imge/${img}.png`} />
-                <Stack p={1} gap={2}>
+                    <img style={{width:'100%' , height:'100%' , maxWidth:'400px'}} src={`./Imge/${img}.png`} />
+                <Stack p={1} gap={2}  sx={{width:'100%' , height:'100%' , maxWidth:'400px'}}>
                         <Typography fontWeight={'700'}  color={`#1B3764`} fontSize={'25px'} >
                             {item}
                         </Typography>
@@ -77,7 +77,7 @@ function Blog() {
     }
     </Stack>
 
-    <Stack flexDirection={'row'} gap={3} py={6}>
+    <Stack flexDirection={{xs:"column" , sm:'row'}} gap={3} py={6}>
                     
     {
         data.slice(3,6).map(({id , text, img , title , date , item})=>{
@@ -85,8 +85,8 @@ function Blog() {
                 <>
                      <Link to={`/blog/${id}`}> 
                 <Stack key={id} sx={{backgroundColor:'width' , cursor:"pointer"}} >
-                    <img src={`./Imge/${img}.png`} />
-                <Stack p={1} gap={2}>
+                    <img style={{width:'100%' , height:'100%' , maxWidth:'400px'}} src={`./Imge/${img}.png`} />
+                <Stack p={1} gap={2}  sx={{width:'100%' , height:'100%' , maxWidth:'400px'}}>
                         <Typography fontWeight={'700'}  color={`#1B3764`} fontSize={'25px'} >
                             {item}
                         </Typography>
@@ -113,7 +113,7 @@ function Blog() {
     }
     </Stack>
 
-    <Stack flexDirection={'row'} gap={3} py={6}>
+    <Stack flexDirection={{xs:"column" , sm:'row'}} gap={3} py={6}>
                     
     {
         data.slice(6,9).map(({id , text, img , title , date , item})=>{
@@ -121,8 +121,8 @@ function Blog() {
                 <>
                      <Link to={`/blog/${id}`}>
                 <Stack key={id} sx={{backgroundColor:'width' , cursor:"pointer"}} >
-                    <img src={`./Imge/${img}.png`} />
-                <Stack p={1} gap={2}>
+                    <img style={{width:'100%' , height:'100%' , maxWidth:'400px'}}  src={`./Imge/${img}.png`} />
+                <Stack p={1} gap={2} sx={{width:'100%' , height:'100%' , maxWidth:'400px'}}>
                         <Typography fontWeight={'700'}  color={`#1B3764`} fontSize={'25px'} >
                             {item}
                         </Typography>
