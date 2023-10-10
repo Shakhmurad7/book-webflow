@@ -48,7 +48,7 @@
             </Stack>
             <Stack flexDirection={{ md:'row'}} gap={10} width={'100%'} >
 
-            <Stack flexDirection={{sx:"column" , sm:"row"}} alignItems={"center"} justifyContent={"center"} gap={6} width={'100%'}>               
+            <Stack flexDirection={{sx:"column" , sm:"row"}} key={0} alignItems={"center"} justifyContent={"center"} gap={6} width={'100%'}>               
                 {
                     user.slice(0,2).map(({id, img , text, item}:any) => {
                         return (

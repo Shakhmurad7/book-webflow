@@ -83,7 +83,7 @@ function Store({addToCart}:any) {
                     })
                 }
     </Stack>
-    <Stack justifyContent={"space-between"} alignItems={"center"}  flexDirection={{xs:"column" , sm:'row'}} gap={5} py={6} > 
+    <Stack justifyContent={"space-between"} alignItems={"center"}  key={0} flexDirection={{xs:"column" , sm:'row'}} gap={5} py={6} > 
                 {
                     data.slice(3,6).map((item:any)=>{
                         return(

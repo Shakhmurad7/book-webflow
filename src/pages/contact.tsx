@@ -29,7 +29,7 @@ function Contact() {
     </Box>
 
 <Container sx={{py:10}}>
-    <Stack flexDirection={'row'} justifyContent={"space-between"} gap={5}>
+    <Stack flexDirection={{xs:"column" , sm:'row'}} justifyContent={"space-between"} gap={5}>
         <Stack gap={3} width={{xs:'100%' , md:'600px'}}>
         <Typography position={'relative'} variant='h4' component={"h4"}>
                 Keep in Touch
@@ -73,11 +73,17 @@ function Contact() {
         </Stack>
                 
         <Stack width={{ xs: '100%', md: '550px' }} gap={2}>
-      <Stack gap={2} flexDirection={'row'} position={"relative"}>
-        <input className="input-contact" type="text"  placeholder="Name" />
-        <input className="input-contact" type="email" placeholder="Email"  />
-        <img  className="img-contact-1" src={'./Imge/user.svg'} />
-        <img  className="img-contact-2" src={'./Imge/mail.svg'} />
+      <Stack gap={2} flexDirection={'row'} width={'100%'}>
+        <Stack gap={2} flexDirection={{xs:'column', sm:'row'}} width={'100%'}>
+        <Stack position={"relative"} width={'100%'}>
+          <input className="input-contact" type="text"  placeholder="Name" />
+          <img  className="img-contact-1" src={'./Imge/user.svg'} />
+        </Stack>
+        <Stack  position={"relative"} width={'100%'}>
+          <input className="input-contact-email" type="email" placeholder="Email"  />
+          <img  className="img-contact-2" src={'./Imge/mail.svg'} />
+        </Stack>
+        </Stack>
       </Stack>
       <Box  position={"relative"}>
         <img className="img-contact-3" src={'./Imge/phone.svg'} />

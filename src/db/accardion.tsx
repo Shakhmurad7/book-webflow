@@ -72,7 +72,7 @@ function AccordionComponent() {
 
   return (
     <>
-    <Stack flexDirection={'row'} justifyContent={"space-between"} gap={10} >
+    <Stack flexDirection={{xs:"column" , sm:'row'}} justifyContent={"space-between"} gap={10} >
 
     <Stack gap={2}>
       {accordionData.slice(0,4).map(({ id, text, item }) => (
@@ -80,7 +80,7 @@ function AccordionComponent() {
           <Stack>
           <Stack flexDirection={'row'} gap={2} alignItems={"center"}>
               <Box>{openAccordion===id? <img src={'./Imge/Ellipse 16.svg'}/>: <img src={'./Imge/Ellipse 16 (1).svg'}/> }</Box>
-            <Typography sx={{cursor:"pointer"}} variant="h5" component={"h5"}>
+            <Typography sx={{cursor:"pointer"}} variant="h5" fontSize={{xs:'22px' , md:'24px'}} component={"h5"}>
                 {item}
             </Typography>
             </Stack>
@@ -96,7 +96,7 @@ function AccordionComponent() {
           <Stack width={{ xs: "100%", md: "500px" }}>
             <Stack flexDirection={'row'} gap={2} alignItems={"center"}>
               <Box>{openAccordion===id? <img src={'./Imge/Ellipse 16.svg'}/>: <img src={'./Imge/Ellipse 16 (1).svg'}/> }</Box>
-            <Typography sx={{cursor:"pointer"}} variant="h5" component={"h5"}>
+            <Typography sx={{cursor:"pointer"}}  fontSize={{xs:'22px' , md:'24px'}} variant="h5" component={"h5"}>
                 {item}
             </Typography>
             </Stack>

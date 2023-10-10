@@ -7,15 +7,15 @@ import { Link } from "react-router-dom";
 const url = 'https://book-db-shakhmurad.vercel.app/posts-card'
 
 function CardHome() {
-    const [data , setdata] = useState([])
-    useEffect(()=>{
-        axios.get(url).then(({data})=>{
-            setdata(data)
-        })
-    })
+    const [data, setdata] = useState([]);
+    useEffect(() => {
+      axios.get(url).then(({ data }) => {
+        setdata(data);
+      });
+    }, []); 
   return (
 <>
-<Stack flexDirection={{xs:"column", sm:'row'}}  gap={3} py={6}>
+<Stack flexDirection={{xs:"column", sm:'row'}} gap={3} py={6}>
                     
     {
         data.slice(0,3).map(({id , text, img , title , date , item})=>{
@@ -24,7 +24,7 @@ function CardHome() {
                
                 <Stack key={id} sx={{backgroundColor:'width' , cursor:"pointer"}} alignItems={"center"} textAlign={{xs:"center" , sm:"start"}}>
                     <img style={{width:'100%' , height:'100%' , maxWidth:'400px'}} src={`./Imge/${img}.png`} />
-                <Stack p={1} gap={2}>
+                <Stack p={1} gap={2} key={id}>
                         <Typography fontWeight={'700'}  color={`#1B3764`} fontSize={'25px'} >
                             {item}
                         </Typography>
