@@ -39,10 +39,10 @@ function Blog() {
 
 
 
-<Container sx={{py:10}}  sx={{alignItems:'center', display:"flex" , flexDirection:'column'}}>
+<Container sx={{py:10 , alignItems:'center', display:"flex" , flexDirection:'column'}}>
 
 <Stack flexDirection={{xs:"column" , sm:'row'}} gap={3} py={6}>
-                    
+                     
     {
         data.slice(0,3).map(({id , text, img , title , date , item})=>{
             return(

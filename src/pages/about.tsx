@@ -21,20 +21,20 @@ function About() {
             </Stack>
             <Stack gap={5}>
               
-          <Stack  flexDirection={'row'} gap={4} justifyContent={'space-between'} pt={5}>
-            <Stack flexDirection={'row'} gap={4}  alignItems={'center'} p={5} sx={{boxShadow: `rgba(99, 99, 99, 0.2) 0px 2px 8px 0px` ,  backgroundColor:'white'}}>
+          <Stack flexDirection={{xs:"column" , md:'row'}} gap={4} justifyContent={'space-between'} pt={5}>
+            <Stack flexDirection={'row'} gap={4}  alignItems={'center'} p={{xs:1 , sm:5}} sx={{boxShadow: `rgba(99, 99, 99, 0.2) 0px 2px 8px 0px` ,  backgroundColor:'white'}}>
               <Stack sx={{color:'#1B3764'  }} gap={1}>
-                  <Typography sx={{fontWeight:'700' ,fontSize:'22px' }} >Country :</Typography>
-                  <Typography sx={{fontWeight:'700' ,fontSize:'22px' }} >Language :</Typography>
-                  <Typography sx={{fontWeight:'700' ,fontSize:'22px' }} >Genre :</Typography>
-                  <Typography sx={{fontWeight:'700' ,fontSize:'22px' }} >Publication date :</Typography>
-                  <Typography sx={{fontWeight:'700' ,fontSize:'22px' }} >Share us on:</Typography>
+                  <Typography sx={{fontWeight:'700'  }} fontSize={{xs:"15px" , sm:'22px'}}>Country :</Typography>
+                  <Typography sx={{fontWeight:'700'  }} fontSize={{xs:"15px" , sm:'22px'}}>Language :</Typography>
+                  <Typography sx={{fontWeight:'700'  }}  fontSize={{xs:"15px" , sm:'22px'}}>Genre :</Typography>
+                  <Typography sx={{fontWeight:'700'  }} fontSize={{xs:"15px" , sm:'22px'}} >Publication date :</Typography>
+                  <Typography sx={{fontWeight:'700'  }}  fontSize={{xs:"15px" , sm:'22px'}}>Share us on:</Typography>
               </Stack>
               <Stack sx={{ color:'#969AA0' }} gap={1}>
-                  <Typography sx={{fontWeight:'700' ,fontSize:'22px' }} >United Kingdom</Typography>
-                  <Typography sx={{fontWeight:'700' ,fontSize:'22px' }} >English</Typography>
-                  <Typography sx={{fontWeight:'700' ,fontSize:'22px' }} >Historiography</Typography>
-                  <Typography sx={{fontWeight:'700' ,fontSize:'22px' }} >1991</Typography>
+                  <Typography sx={{fontWeight:'700'  }} fontSize={{xs:"15px" , sm:'22px'}} >United Kingdom</Typography>
+                  <Typography sx={{fontWeight:'700'  }} fontSize={{xs:"15px" , sm:'22px'}} >English</Typography>
+                  <Typography sx={{fontWeight:'700'  }} fontSize={{xs:"15px" , sm:'22px'}} >Historiography</Typography>
+                  <Typography sx={{fontWeight:'700'  }} fontSize={{xs:"15px" , sm:'22px'}} >1991</Typography>
                   <Stack flexDirection={'row'} gap={1}>
                     <InstagramIcon/>
                     <TwitterIcon/>
@@ -43,8 +43,8 @@ function About() {
               </Stack>
                   </Stack>
 
-              <Stack gap={4} width={'50%'}>
-                  <Typography variant='h3' component={'h3'} position={"relative"} color={'#1B3764'}>
+              <Stack gap={4} width={{md:'50%'  , xs:"100%"}}>
+                  <Typography variant='h3' component={'h3'} fontSize={{xs:'30px' , md:'45px'}} position={"relative"} color={'#1B3764'}>
                   About Dr. John Abraham 
                   <span
                 style={{
@@ -70,7 +70,7 @@ function About() {
 
 
                 <Container sx={{py:10}}>
-                  <Stack flexDirection={'row'} gap={10}>
+                  <Stack flexDirection={{xs:"column" , md:'row'}} gap={10}>
                   <Stack gap={3}>
 
                     <Stack gap={5}>
@@ -93,7 +93,7 @@ function About() {
                       </Typography>
                     </Stack>
 
-                    <Stack gap={5} pl={3}>
+                    <Stack gap={5} pl={{xs:0 , sm:3}}>
                     <Stack flexDirection={'row'} gap={2} alignItems={'center'}>
                         <Typography sx={{p:2 , fontWeight:'700' , fontSize:'25px' ,   backgroundColor:'#FFCA42' , color:'#1B3764' , height:"fit-content"}} >01</Typography>
                         <Stack>
@@ -119,7 +119,7 @@ function About() {
                   </Stack>
 
                   <Stack>
-                    <img src={'./Imge/Image.jpg'} />
+                    <img style={{width:'100%' , height:'100%' , maxWidth:'600px'}} src={'./Imge/Image.jpg'} />
                   </Stack>
                   </Stack>
                 </Container>
